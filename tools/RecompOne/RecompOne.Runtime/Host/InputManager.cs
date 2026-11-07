@@ -56,6 +56,15 @@ internal static unsafe class InputManager
         }
 
 
+        // A hidden capture is not the window the player is using. SDL reads gamepads
+        // whether or not any window has focus, so a capture running beside another
+        // game would otherwise take that player's button presses as its own.
+        if (Environment.GetEnvironmentVariable("RECOMP_CAPTURE_HIDDEN") == "1")
+        {
+            Console.WriteLine("[Input] hidden capture: physical gamepads ignored");
+            return;
+        }
+
         try
         {
             _sdl = Sdl.GetApi();
