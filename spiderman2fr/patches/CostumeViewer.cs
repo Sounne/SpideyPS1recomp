@@ -39,6 +39,7 @@ public static partial class Costume
         for (uint i = 0; i < 7; i++) m.WriteU32(0x800C30D0 + i * 4, 0);
         foreach (byte id in ids)
             if (id != 0) m.WriteU32(0x800C30D0 + (uint)(id - 1) * 4, 1);
+        Powers.Grant(m);
     }
 
     public static void PrepareViewer(CpuContext c, IMemory m)

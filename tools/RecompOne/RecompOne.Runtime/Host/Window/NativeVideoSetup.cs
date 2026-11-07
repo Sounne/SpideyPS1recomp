@@ -15,7 +15,6 @@ public static class NativeVideoSetup
     static Bindings? _active;
     static VideoSetupState? _state;
     static uint _text;
-    static bool _requestSave;
 
     public static void RenameScreen(IMemory m, Bindings b)
     {
@@ -107,7 +106,7 @@ public static class NativeVideoSetup
             ConfigManager.View.Fullscreen = _state.Fullscreen;
             HostWindow.SetFullscreen(_state.Fullscreen);
             if (!_state.Fullscreen) OutputPanel.RequestResolution(res.Width, res.Height);
-            _requestSave = true;
+            ConfigManager.RequestSave();
             _state.Applied = true;
             Console.WriteLine($"[video-menu] apply {res} wide={_state.Widescreen} fullscreen={_state.Fullscreen}");
         }
@@ -117,12 +116,5 @@ public static class NativeVideoSetup
         Dispatcher.Call(c, m, b.Sound);
         c.Restore(saved);
         Console.WriteLine($"[video-menu] row={row} pending={_state!.Selected} wide={_state.Widescreen}");
-    }
-    internal static void SavePending()
-    {
-        if (!_requestSave) return;
-        _requestSave = false;
-        ConfigManager.SaveGame();
-        ConfigManager.SaveView(PanelManager.Panels);
     }
 }

@@ -765,7 +765,7 @@ public static partial class HostWindow
         gl.Viewport(0, 0, (uint)fbDef.X, (uint)fbDef.Y);
         _imgui.Render();
         CaptureHostProof(gl, fbDef.X, fbDef.Y);
-        NativeVideoSetup.SavePending();
+        ConfigManager.SaveRequested(PanelManager.Panels);
         ProbeGpuQueue(gl);
         Diagnostics.NativeAllocationProbe.Flush();
         Diagnostics.NativeAllocationProbe.Phase(4); // following native window swap

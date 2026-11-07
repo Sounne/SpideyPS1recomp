@@ -40,6 +40,15 @@ mod slots are available in addition to the nineteen original costumes. The SM2
 example includes web wings and its own Blender-exported painting templates;
 SM1's texture layout is different.
 
+## Powers
+
+`patches/Powers.cs` lifts the three-power limit. A chosen power set (default: the six
+positive powers; ID 7, two web cartridges, is a malus) is granted after the retail setter
+(shell `80249168`) and when the shell's title loop returns. CREATE A SPIDER is always
+unlocked; its POWER 1..3 rows become one POWERS row and its list becomes a checklist of
+all seven powers. The set is saved as `Powers` in `interface.ini`; `SPIDEY_POWERS=<mask>`
+overrides it for one run (`0` restores retail behaviour).
+
 ## Building
 
 Needs .NET 10, Python 3 with `numpy`/`PIL`, and the disc at the repository root for the

@@ -82,6 +82,7 @@ DATA = {
     0x80250340: (0x802504D4, 'shell power jump table (comment only; shell data +0x194)'),
     0x80251560: (0x802516F4, 'retail costume viewer table; shell data +0x194'),
     0x80251568: (0x802516FC, 'retail costume viewer table +8; shell data +0x194'),
+    0x80251644: (0x802517D8, 'CREATE A SPIDER power names; formed in FR shell 0x8024A644'),
 }
 
 # Interior addresses of functions whose size changed, read on both sides.

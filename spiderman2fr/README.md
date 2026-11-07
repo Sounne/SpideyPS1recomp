@@ -75,6 +75,25 @@ picture is one game frame behind. The window title shows both rates, for example
 `144 FPS (game 25.0)`. `RECOMP_FRAMERATE=original|doubled|unlimited`,
 `RECOMP_VSYNC=0|1|adaptive` and `RECOMP_FPS_LIMIT=n` override the saved settings.
 
+## Powers
+
+Retail gives each costume up to three of the seven powers, and CREER UNE ARAIGNEE lets
+you pick three, without duplicates, once it is unlocked. This port grants a chosen power
+set on top of the costume's own powers:
+
+* by default the six positive powers are on: FURTIVITE, INVULNERABILITE, TOILE ILLIMITE,
+  FORCE ACCRUE, DOUBLE SAUT, DEPLACEMENT ACCRU. DEUX CARTOUCHES (web cartridges capped at
+  2 instead of 10) is a malus and stays off;
+* SPECIAL > CREER UNE ARAIGNEE is always unlocked. POUVOIR 1-3 become one POUVOIRS row
+  (it shows how many are on). Its list is a checklist of all seven powers: cross toggles
+  OUI/NON, VALIDER closes the list, triangle leaves the screen as before;
+* the choice is saved in the port's settings (`Powers` in `interface.ini`, one bit per
+  power) and applies to every costume, save and level select. Attract-mode demos still
+  play without powers so their recorded input stays in sync.
+
+`SPIDEY_POWERS=0x3F` sets the powers for one run without saving them; `SPIDEY_POWERS=0`
+gives retail behaviour (costume powers only).
+
 ## Unattended runs
 
 Every `SPIDEY_*` switch of the USA port works here. Archive anchors use the French

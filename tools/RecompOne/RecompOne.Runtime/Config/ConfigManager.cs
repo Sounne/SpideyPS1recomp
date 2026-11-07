@@ -96,6 +96,22 @@ public static class ConfigManager
         File.WriteAllText(GameConfigPath, JsonSerializer.Serialize(Game, _opts));
     }
 
+    static volatile bool _saveRequested;
+
+    /// <summary>
+    /// Asks the window thread to write both settings files at its next frame. Game-thread
+    /// code (in-game menus) uses this: SaveView needs the ImGui context.
+    /// </summary>
+    public static void RequestSave() => _saveRequested = true;
+
+    internal static void SaveRequested(IReadOnlyList<IPanel> panels)
+    {
+        if (!_saveRequested) return;
+        _saveRequested = false;
+        SaveGame();
+        SaveView(panels);
+    }
+
     static (ViewConfig view, string imguiIni) ParseInterfaceFile(string content)
     {
         var view = new ViewConfig();

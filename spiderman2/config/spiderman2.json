@@ -202,6 +202,60 @@
       "target": "RecompOne.Runtime.Host.Window.NativeVideoSetup.Input"
     },
     {
+      "overlay": "shell",
+      "address": "0x80249168",
+      "mode": "post",
+      "target": "Recompiled.Powers.Grant"
+    },
+    {
+      "overlay": "shell",
+      "function": "func_8024EE18",
+      "mode": "post",
+      "target": "Recompiled.Powers.LeaveShell"
+    },
+    {
+      "overlay": "shell",
+      "function": "func_80249F04",
+      "mode": "pre",
+      "target": "Recompiled.Powers.Enter"
+    },
+    {
+      "overlay": "shell",
+      "function": "func_80249F04",
+      "mode": "post",
+      "target": "Recompiled.Powers.Leave"
+    },
+    {
+      "overlay": "shell",
+      "function": "func_8024ACD8",
+      "mode": "pre",
+      "target": "Recompiled.Powers.Unlock"
+    },
+    {
+      "overlay": "main",
+      "function": "func_80018380",
+      "mode": "pre",
+      "target": "Recompiled.Powers.AddRow"
+    },
+    {
+      "overlay": "main",
+      "function": "func_80018D70",
+      "mode": "pre",
+      "target": "Recompiled.Powers.Input"
+    },
+    {
+      "overlay": "main",
+      "function": "func_8001C838",
+      "mode": "pre",
+      "target": "Recompiled.Powers.DrawValue"
+    },
+    {
+      "overlay": "main",
+      "function": "func_80069D24",
+      "mode": "pre",
+      "target": "Recompiled.Powers.SameName"
+    },
+    {
       "overlay": "main",
       "function": "CdWadFind",
       "mode": "pre",
