@@ -1,7 +1,8 @@
 namespace RecompOne.Runtime.Hle;
 
 /// <summary>
-/// 60 FPS presentation of a 30 FPS game without touching its clock.
+/// Smoother presentation of a 30 FPS game (60 FPS, or as many frames as the display
+/// takes) without touching its clock.
 ///
 /// Every backend call the game makes is passed straight through, so the frame it draws
 /// is exactly what it always was, and is also recorded. When the frame is presented the
@@ -10,6 +11,11 @@ namespace RecompOne.Runtime.Hle;
 /// frame, presents that, and replays it unchanged to put the real frame back. The copy
 /// is shown on the game's next console tick (HostWindow.PresentHeld); nothing waits, so
 /// the ticks that drive the game clock are delivered exactly as without interpolation.
+///
+/// With an unlimited frame rate the host instead closes the frame as soon as the game
+/// starts waiting for a tick, and while it waits replays the recording at the fraction
+/// of a game frame that has elapsed (HostWindow.PresentUntil), putting the real frame
+/// back before the game runs again.
 ///
 /// Scenery (every corner named by its world position, GteIds.CameraPosition) is redrawn
 /// from a camera between the previous frame's and this one's, so finely and coarsely
@@ -70,6 +76,17 @@ public sealed class FrameInterpolator : IGpuBackend
     public bool Ready => _inner.Ready;
     public bool HasFrame => _last.Count > 0;
 
+    /// <summary>Drawing the game has done since the last <see cref="EndFrame"/>.</summary>
+    public int PendingOps => _frame.Count;
+
+    /// <summary>
+    /// False once the game has copied or uploaded into an area the closed frame drew
+    /// (a movie frame, a screen built from images): replaying the recording now would
+    /// paint the old picture over the new one.
+    /// </summary>
+    public bool LastFrameIntact { get; private set; }
+    readonly List<(int X0, int Y0, int X1, int Y1)> _lastAreas = new();
+
     public void SetDrawEnv(in HleDrawEnv env)
     {
         _env = env;
@@ -128,6 +145,13 @@ public sealed class FrameInterpolator : IGpuBackend
 
     void NoteTransfer(int x, int y, int w, int h)
     {
+        if (LastFrameIntact)
+            foreach (var a in _lastAreas)
+                if (x <= a.X1 && x + w > a.X0 && y <= a.Y1 && y + h > a.Y0)
+                {
+                    LastFrameIntact = false;
+                    break;
+                }
         if (_overwritten) return;
         foreach (var op in _frame)
         {
@@ -170,6 +194,11 @@ public sealed class FrameInterpolator : IGpuBackend
         }
         (_last, _frame) = (_frame, _last);
         _frame.Clear();
+        _lastAreas.Clear();
+        foreach (var op in _last)
+            if (op.Kind == Kind.Env && !_lastAreas.Contains((op.Env.ClipX0, op.Env.ClipY0, op.Env.ClipX1, op.Env.ClipY1)))
+                _lastAreas.Add((op.Env.ClipX0, op.Env.ClipY0, op.Env.ClipX1, op.Env.ClipY1));
+        LastFrameIntact = true;
         _priorCamera = _camera;
         _camera = Hardware.GteIds.FrameCamera;
         _reproject = _camera.Valid && _priorCamera.Valid && Invert(_camera.R, _inverse);

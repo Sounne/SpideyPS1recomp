@@ -491,19 +491,117 @@
             "ja-jp": "モニターのリフレッシュレートと同期します",
             "cn-zh": "使游戏刷新率与显示器的刷新率同步"
         },
-        "settings.display.interpolate60": {
-            "en": "60 FPS (interpolated)",
-            "pt-BR": "60 FPS (interpolado)",
-            "es-419": "60 FPS (interpolado)",
-            "ja-jp": "60 FPS（補間）",
-            "cn-zh": "60 FPS（插帧）"
+        "settings.display.framerate": {
+            "en": "Frame rate",
+            "pt-BR": "Taxa de quadros",
+            "es-419": "Velocidad de fotogramas",
+            "ja-jp": "フレームレート",
+            "cn-zh": "帧率"
         },
-        "settings.display.interpolate60_hint": {
+        "settings.display.framerate_original": {
+            "en": "Original ({0} FPS)",
+            "pt-BR": "Original ({0} FPS)",
+            "es-419": "Original ({0} FPS)",
+            "ja-jp": "オリジナル（{0} FPS）",
+            "cn-zh": "原始（{0} FPS）"
+        },
+        "settings.display.framerate_original_hint": {
+            "en": "One picture per game frame, as on the console.",
+            "pt-BR": "Uma imagem por quadro do jogo, como no console.",
+            "es-419": "Una imagen por fotograma del juego, como en la consola.",
+            "ja-jp": "ゲームの1フレームにつき1枚、本体と同じ表示です。",
+            "cn-zh": "每个游戏帧显示一幅画面，与主机相同。"
+        },
+        "settings.display.framerate_doubled": {
+            "en": "{0} FPS (interpolated)",
+            "pt-BR": "{0} FPS (interpolado)",
+            "es-419": "{0} FPS (interpolado)",
+            "ja-jp": "{0} FPS（補間）",
+            "cn-zh": "{0} FPS（插帧）"
+        },
+        "settings.display.framerate_doubled_hint": {
             "en": "Draws an in-between frame for smoother motion. Game speed is unchanged.",
             "pt-BR": "Desenha um quadro intermediário para um movimento mais suave. A velocidade do jogo não muda.",
             "es-419": "Dibuja un cuadro intermedio para un movimiento más fluido. La velocidad del juego no cambia.",
             "ja-jp": "中間フレームを描画して動きを滑らかにします。ゲーム速度は変わりません。",
             "cn-zh": "绘制中间帧使画面更流畅，游戏速度不变。"
+        },
+        "settings.display.framerate_unlimited": {
+            "en": "Unlimited (interpolated)",
+            "pt-BR": "Ilimitado (interpolado)",
+            "es-419": "Ilimitado (interpolado)",
+            "ja-jp": "無制限（補間）",
+            "cn-zh": "无限制（插帧）"
+        },
+        "settings.display.framerate_unlimited_hint": {
+            "en": "Draws in-between frames as fast as the display allows. Game speed is unchanged; the picture is one game frame behind.",
+            "pt-BR": "Desenha quadros intermediários tão rápido quanto a tela permitir. A velocidade do jogo não muda; a imagem fica um quadro do jogo atrás.",
+            "es-419": "Dibuja cuadros intermedios tan rápido como lo permita la pantalla. La velocidad del juego no cambia; la imagen va un fotograma del juego por detrás.",
+            "ja-jp": "画面が許す限り中間フレームを描画します。ゲーム速度は変わらず、表示はゲームの1フレーム遅れになります。",
+            "cn-zh": "以显示器允许的最快速度绘制中间帧。游戏速度不变，画面会延迟一个游戏帧。"
+        },
+        "settings.display.vsync_off": {
+            "en": "Off",
+            "pt-BR": "Desligado",
+            "es-419": "Desactivado",
+            "ja-jp": "オフ",
+            "cn-zh": "关闭"
+        },
+        "settings.display.vsync_off_hint": {
+            "en": "Presents frames as soon as they are drawn. Highest frame rate, may tear.",
+            "pt-BR": "Apresenta os quadros assim que são desenhados. Maior taxa de quadros, pode haver tearing.",
+            "es-419": "Muestra los cuadros en cuanto se dibujan. Mayor velocidad de fotogramas, puede haber tearing.",
+            "ja-jp": "描画したフレームをすぐに表示します。最高のフレームレートですが、ティアリングが起きることがあります。",
+            "cn-zh": "绘制完成后立即显示画面。帧率最高，可能出现画面撕裂。"
+        },
+        "settings.display.vsync_on": {
+            "en": "On",
+            "pt-BR": "Ligado",
+            "es-419": "Activado",
+            "ja-jp": "オン",
+            "cn-zh": "开启"
+        },
+        "settings.display.vsync_adaptive": {
+            "en": "Adaptive",
+            "pt-BR": "Adaptativo",
+            "es-419": "Adaptativo",
+            "ja-jp": "アダプティブ",
+            "cn-zh": "自适应"
+        },
+        "settings.display.vsync_adaptive_hint": {
+            "en": "Syncs with the monitor, but shows a late frame at once instead of waiting for the next refresh (may tear briefly).",
+            "pt-BR": "Sincroniza com o monitor, mas mostra um quadro atrasado na hora em vez de esperar a próxima atualização (pode haver tearing breve).",
+            "es-419": "Se sincroniza con el monitor, pero muestra un cuadro atrasado al instante en lugar de esperar al siguiente refresco (puede haber tearing breve).",
+            "ja-jp": "モニターと同期しますが、遅れたフレームは次のリフレッシュを待たずにすぐ表示します（一瞬ティアリングすることがあります）。",
+            "cn-zh": "与显示器同步，但延迟的帧会立即显示而不是等待下一次刷新（可能短暂撕裂）。"
+        },
+        "settings.display.vsync_adaptive_unsupported": {
+            "en": "Not supported by this graphics driver.",
+            "pt-BR": "Não suportado por este driver de vídeo.",
+            "es-419": "No es compatible con este controlador gráfico.",
+            "ja-jp": "このグラフィックドライバーでは使用できません。",
+            "cn-zh": "当前显卡驱动不支持。"
+        },
+        "settings.display.fps_limit": {
+            "en": "Frame limit",
+            "pt-BR": "Limite de quadros",
+            "es-419": "Límite de fotogramas",
+            "ja-jp": "フレーム上限",
+            "cn-zh": "帧数上限"
+        },
+        "settings.display.fps_limit_none": {
+            "en": "None",
+            "pt-BR": "Nenhum",
+            "es-419": "Ninguno",
+            "ja-jp": "なし",
+            "cn-zh": "无"
+        },
+        "settings.display.fps_limit_hint": {
+            "en": "Caps the pictures shown per second at an unlimited frame rate. With VSync on, the monitor also sets the pace.",
+            "pt-BR": "Limita as imagens exibidas por segundo na taxa ilimitada. Com VSync ligado, o monitor também define o ritmo.",
+            "es-419": "Limita las imágenes mostradas por segundo con velocidad ilimitada. Con VSync activado, el monitor también marca el ritmo.",
+            "ja-jp": "無制限フレームレート時の1秒あたりの表示枚数を制限します。VSyncオンではモニターも速度を決めます。",
+            "cn-zh": "限制无限制帧率下每秒显示的画面数。开启垂直同步时，显示器也会决定节奏。"
         },
         "settings.display.fxaa": {
             "en": "FXAA",

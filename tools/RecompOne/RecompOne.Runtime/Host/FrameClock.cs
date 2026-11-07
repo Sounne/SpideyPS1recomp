@@ -56,7 +56,15 @@ internal static class FrameClock
     [DllImport("kernel32.dll", ExactSpelling = true)]
     static extern uint WaitForSingleObject(SafeWaitHandle handle, uint milliseconds);
 
-    public static void WaitForVBlank()
+    public static double NowMs => _clock.Elapsed.TotalMilliseconds;
+    public static double VBlankPeriodMs => VBlankMs;
+
+    /// <summary>
+    /// When the next console vblank is due, on the same clock as <see cref="NowMs"/>.
+    /// This is the deadline <see cref="WaitForVBlank"/> waits for; the host may use the
+    /// time until then to present extra frames.
+    /// </summary>
+    public static double NextVBlankMs()
     {
         double deadline = _lastVBlank + VBlankMs;
         double now = _clock.Elapsed.TotalMilliseconds;
@@ -68,9 +76,17 @@ internal static class FrameClock
         // stall still cannot accumulate more than one update of IRQ debt, and
         // Throttle separately prevents presentation catch-up bursts.
         if (now - deadline >= 2 * VBlankMs) deadline = now - VBlankMs;
+        return deadline;
+    }
+
+    public static void WaitForVBlank()
+    {
+        double deadline = NextVBlankMs();
         WaitUntil(deadline);
         _lastVBlank = deadline;
     }
+
+    public static void WaitUntilMs(double deadline) => WaitUntil(deadline);
 
     static void WaitUntil(double deadline)
     {

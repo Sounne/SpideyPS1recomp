@@ -22,15 +22,16 @@ public static partial class HostWindow
     static Gpu? _gpu;
     static string _baseTitle = "";
     static long _fpsWindowStart;
-    static int _fpsFrames;
-    static double _lastFps;
+    static int _fpsFrames, _displayFrames;
+    static double _lastFps, _lastDisplayFps;
 
     static void ApplyTitle()
     {
         if (_window == null) return;
-        _window.Title = _lastFps > 0
-            ? $"{_baseTitle} - {_lastFps:F1} FPS"
-            : _baseTitle;
+        _window.Title = _lastFps <= 0 ? _baseTitle
+            // Interpolation presents more pictures than the game draws: show both.
+            : _lastDisplayFps > _lastFps + 1 ? $"{_baseTitle} - {_lastDisplayFps:F0} FPS (game {_lastFps:F1})"
+            : $"{_baseTitle} - {_lastFps:F1} FPS";
     }
 
     /// <summary>Count real game frames, excluding host-only service redraws.</summary>
@@ -42,13 +43,16 @@ public static partial class HostWindow
         {
             _fpsWindowStart = now;
             _fpsFrames = 1;
+            _displayFrames = 0;
             return;
         }
         _fpsFrames++;
         double elapsed = (double)(now - _fpsWindowStart) / System.Diagnostics.Stopwatch.Frequency;
         if (elapsed < 1.0) return;
         _lastFps = _fpsFrames / elapsed;
+        _lastDisplayFps = _displayFrames / elapsed;
         _fpsFrames = 0;
+        _displayFrames = 0;
         _fpsWindowStart = now;
         ApplyTitle();
     }
@@ -397,7 +401,10 @@ public static partial class HostWindow
     public static void PresentGameFrame(Gpu? gpu)
     {
         _heldPending = false;
-        if (_interpolator is { } ip && Hle.GpuHle.Backend == ip && !MovieFrameActive &&
+        // At an unlimited frame rate PresentUntil closes and shows frames; this is only
+        // the fallback for pictures it did not draw, so present them as they are.
+        if (_frameRate != FrameRateMode.Unlimited &&
+            _interpolator is { } ip && Hle.GpuHle.Backend == ip && !MovieFrameActive &&
             _glBackend is { Ready: true } gl && gpu is { DisplayEnabled: true } && ip.EndFrame())
         {
             long start = System.Diagnostics.Stopwatch.GetTimestamp();
@@ -475,12 +482,13 @@ public static partial class HostWindow
         _interpolator ??= new Hle.FrameInterpolator(_glBackend);
         Hle.GpuHle.Backend = on ? _interpolator : _glBackend;
         Hardware.GteIds.Enabled = on;
-        Console.WriteLine($"[Gpu] 60 FPS interpolation {(on ? "on" : "off")}");
+        Console.WriteLine($"[Gpu] frame interpolation {(on ? "on" : "off")}");
     }
 
     public static void Present(Gpu? gpu)
     {
         _gpu = gpu;
+        _displayFrames++;
         long eventsStart = Diagnostics.PresentationProfile.Stamp();
         ServiceEvents();
         Diagnostics.PresentationProfile.EventsMs = Diagnostics.PresentationProfile.Elapsed(eventsStart);
@@ -535,6 +543,8 @@ public static partial class HostWindow
         _window.WindowState = on ? WindowState.Fullscreen : WindowState.Normal;
         Console.WriteLine($"[Host] fullscreen={on}; window state={_window.WindowState}");
         if (on) SetAutoIconify(false);
+        // Some drivers reset the swap interval with the display mode.
+        _adaptivePending = _vsyncMode == VSyncMode.Adaptive;
     }
 
     static unsafe void SetAutoIconify(bool on)
@@ -620,7 +630,8 @@ public static partial class HostWindow
         _glBackend.InitGl();
         Hle.GpuHle.Active = _glBackend.Ready;
         Hle.GpuHle.Backend = _glBackend;
-        SetInterpolation(ConfigManager.View.Interpolate60);
+        DetectAdaptiveVSync();
+        ApplyFrameRateSettings();
 
         _imgui = new ImGuiController(_gl, _window, input, null, ConfigureImGui);
 
@@ -679,15 +690,9 @@ public static partial class HostWindow
         if (ConfigManager.View.Fullscreen) SetAutoIconify(false);
     }
 
-    public static void SetVSync(bool on)
-    {
-        if (_window != null) _window.VSync = on;
-        FrameClock.VSync = on;
-        FrameClock.Resync();
-    }
-
     static void OnRender(double dt)
     {
+        ApplyPendingSwapInterval();
         long callbackStart = Diagnostics.PresentationProfile.Stamp();
         Diagnostics.PresentationProfile.EnterRenderCallback(callbackStart);
         Diagnostics.NativeAllocationProbe.Phase(3);

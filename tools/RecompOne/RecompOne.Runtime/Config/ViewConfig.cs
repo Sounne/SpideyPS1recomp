@@ -7,6 +7,25 @@ public class PanelState
     public bool Open { get; set; }
 }
 
+/// <summary>How often the host presents a picture of the game.</summary>
+public enum FrameRateMode
+{
+    /// <summary>One picture per game frame, as on the console.</summary>
+    Original,
+    /// <summary>Twice the game's rate, with an interpolated frame between each pair.</summary>
+    Doubled,
+    /// <summary>As many interpolated frames as the display takes.</summary>
+    Unlimited,
+}
+
+public enum VSyncMode
+{
+    Off,
+    On,
+    /// <summary>Synced, but a late frame is shown at once instead of waiting a refresh.</summary>
+    Adaptive,
+}
+
 public class ViewConfig
 {
     public Dictionary<string, string> Values { get; set; } = new(StringComparer.OrdinalIgnoreCase);
@@ -60,17 +79,42 @@ public class ViewConfig
         set => SetFloat("RenderScale", value < 1 ? 1 : value > 8 ? 8 : value);
     }
 
-    public bool VSync
+    public VSyncMode VSyncMode
     {
-        get => GetBool("VSync");
-        set => SetBool("VSync", value);
+        get => Enum.TryParse(GetString("VSyncMode"), true, out VSyncMode m) && Enum.IsDefined(m)
+            ? m
+            : GetBool("VSync") ? VSyncMode.On : VSyncMode.Off;
+        set
+        {
+            SetString("VSyncMode", value.ToString());
+            SetBool("VSync", value != VSyncMode.Off);
+        }
     }
 
-    /// <summary>Present 60 FPS by drawing an in-between frame (FrameInterpolator).</summary>
-    public bool Interpolate60
+    public bool VSync
     {
-        get => GetBool("Interpolate60", true);
-        set => SetBool("Interpolate60", value);
+        get => VSyncMode != VSyncMode.Off;
+        set => VSyncMode = value ? VSyncMode.On : VSyncMode.Off;
+    }
+
+    public FrameRateMode FrameRate
+    {
+        get
+        {
+            if (Enum.TryParse(GetString("FrameRate"), true, out FrameRateMode m) && Enum.IsDefined(m)) return m;
+            // Earlier builds had a single "60 FPS (interpolated)" checkbox, on by default.
+            return Values.ContainsKey("Interpolate60") && !GetBool("Interpolate60", true)
+                ? FrameRateMode.Original
+                : FrameRateMode.Unlimited;
+        }
+        set => SetString("FrameRate", value.ToString());
+    }
+
+    /// <summary>Most frames presented per second at an unlimited frame rate; 0 for no limit.</summary>
+    public int FpsLimit
+    {
+        get => GetInt("FpsLimit") is var v && v > 0 ? Math.Clamp(v, 20, 1000) : 0;
+        set => SetInt("FpsLimit", value > 0 ? Math.Clamp(value, 20, 1000) : 0);
     }
 
     public bool Fxaa

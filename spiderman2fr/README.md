@@ -59,11 +59,29 @@ own. `dotnet publish spiderman2fr/port/SpiderMan2.csproj -c Release` produces th
 self-contained `spiderman2fr/port/dist/SpiderMan2.exe`, which asks for the French
 BIN/CUE on first launch and extracts it beside itself.
 
+## Frame rate and VSync
+
+Settings > Display (shared runtime, so every game in this repository has them):
+
+| setting | choices |
+|---|---|
+| Frame rate | Original (25 FPS on this disc), 50 FPS (interpolated), **Unlimited (interpolated, default)** |
+| VSync | Off, On, Adaptive (selectable only when the driver supports `EXT_swap_control_tear`) |
+| Frame limit | None, 30 to 360 FPS; shown with Unlimited, applies on top of VSync |
+
+The game itself always runs at its own 25 updates per second on the 50 Hz console
+clock. Unlimited presents in-between frames while the game waits for each tick, so the
+picture is one game frame behind. The window title shows both rates, for example
+`144 FPS (game 25.0)`. `RECOMP_FRAMERATE=original|doubled|unlimited`,
+`RECOMP_VSYNC=0|1|adaptive` and `RECOMP_FPS_LIMIT=n` override the saved settings.
+
 ## Unattended runs
 
 Every `SPIDEY_*` switch of the USA port works here. Archive anchors use the French
 file names (`titlepf.bmr`, `legalpf.rle`). `RECOMP_CAPTURE_HIDDEN=1` hides the window
-and `RECOMP_MUTE=1` silences audio.
+and ignores physical gamepads (SDL reads them even without focus, so a capture running
+beside another game would take that player's presses), and `RECOMP_MUTE=1` silences
+audio. Use `RECOMP_FPS_LIMIT` to keep an unlimited frame rate from loading the GPU.
 
 ```bash
 SPIDEY_SCRIPT="titlepf.bmr+80:start:10;titlepf.bmr+280:cross:10;titlepf.bmr+480:cross:10;titlepf.bmr+700:cross:10" \

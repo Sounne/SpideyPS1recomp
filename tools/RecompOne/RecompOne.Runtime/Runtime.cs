@@ -174,6 +174,10 @@ public static class Runtime
     public static void PresentFrame()
     {
         long waitStart = System.Diagnostics.Stopwatch.GetTimestamp();
+        // At an unlimited frame rate the wait for the tick is spent presenting
+        // in-between frames; the tick itself is still delivered on time.
+        bool uncapped = HostWindow.Uncapped;
+        if (uncapped) HostWindow.PresentUntil(Gpu, FrameClock.NextVBlankMs());
         FrameClock.WaitForVBlank();
         Diagnostics.FrameProfile.NoteIrqWait(waitStart, System.Diagnostics.Stopwatch.GetTimestamp());
         if (_hardResetPending)
@@ -183,7 +187,14 @@ public static class Runtime
         }
 
         Diagnostics.CallRing.NoteFrame();
-        if (++_vblanksUntilPresent >= Math.Max(2, VBlanksPerFrame))
+        if (++_vblanksUntilPresent >= Math.Max(2, VBlanksPerFrame) && uncapped && HostWindow.TakeUncappedPresented())
+        {
+            _vblanksUntilPresent = 0;
+            Presents++;
+            HostWindow.NoteGameFrame();
+            Audio.Attach(Spu);
+        }
+        else if (_vblanksUntilPresent >= Math.Max(2, VBlanksPerFrame))
         {
             _vblanksUntilPresent = 0;
             Presents++;
