@@ -63,3 +63,9 @@ xbox/**/*.obj
 xbox/**/*.d
 xbox/**/__pycache__/
 xbox/generated/
+
+# Spider-Man 2 French PAL silo
+spiderman2fr/extracted/
+spiderman2fr/generated/
+spiderman2fr/port/dist/
+spiderman2fr/port/**/shots*/

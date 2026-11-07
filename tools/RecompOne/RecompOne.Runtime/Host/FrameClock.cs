@@ -6,7 +6,11 @@ namespace RecompOne.Runtime.Host;
 
 internal static class FrameClock
 {
-    const double VBlankMs = 1000.0 / 60.0;
+    /// <summary>
+    /// Console vblank rate: 60 for NTSC discs, 50 for PAL ones. Set before the game runs.
+    /// </summary>
+    public static double VBlankHz = 60.0;
+    static double VBlankMs => 1000.0 / VBlankHz;
     const double SpinMs = 1.5;
 
     /// <summary>

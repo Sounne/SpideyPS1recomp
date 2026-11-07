@@ -147,6 +147,15 @@ public static class Runtime
     }
 
     /// <summary>
+    /// Console vblank interrupt rate in Hz: 60 for NTSC discs (the default), 50 for PAL.
+    /// </summary>
+    public static double VBlankHz
+    {
+        get => Host.FrameClock.VBlankHz;
+        set => Host.FrameClock.VBlankHz = Math.Clamp(value, 24.0, 240.0);
+    }
+
+    /// <summary>
     /// Console vblanks per game frame -- see Host.FrameClock.VBlanksPerFrame. Set 2 for
     /// a game that ran at 30 fps on hardware.
     /// </summary>

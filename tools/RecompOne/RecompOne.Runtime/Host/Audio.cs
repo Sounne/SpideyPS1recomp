@@ -23,6 +23,9 @@ internal static unsafe partial class Audio
     static Spu? _spu;
     static volatile bool _running;
     static float _masterVolume = 1.0f;
+    // RECOMP_MUTE=1 silences output (unattended test runs) without touching settings.
+    static readonly bool _mute = Environment.GetEnvironmentVariable("RECOMP_MUTE") == "1";
+    static float Gain => _mute ? 0f : _masterVolume;
 
     public static void Initialize()
     {
@@ -40,7 +43,7 @@ internal static unsafe partial class Audio
             _alc.MakeContextCurrent(_context);
 
             _source = _al.GenSource();
-            _al.SetSourceProperty(_source, SourceFloat.Gain, _masterVolume);
+            _al.SetSourceProperty(_source, SourceFloat.Gain, Gain);
             fixed (uint* ptr = _buffers)
                 _al.GenBuffers(NumBuffers, ptr);
 
@@ -78,7 +81,7 @@ internal static unsafe partial class Audio
     {
         _masterVolume = Math.Clamp(volume, 0f, 1f);
         if (_al != null && _source != 0)
-            _al.SetSourceProperty(_source, SourceFloat.Gain, _masterVolume);
+            _al.SetSourceProperty(_source, SourceFloat.Gain, Gain);
     }
 
     static void MixerLoop()

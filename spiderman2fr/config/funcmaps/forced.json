@@ -1,0 +1,3332 @@
+{
+ "modules": {
+  "chopper": [
+   {
+    "address": "0x80200AC4",
+    "name": "call_80200AC4"
+   },
+   {
+    "address": "0x80200AD8",
+    "name": "call_80200AD8"
+   },
+   {
+    "address": "0x80200AEC",
+    "name": "call_80200AEC"
+   },
+   {
+    "address": "0x80200B00",
+    "name": "call_80200B00"
+   },
+   {
+    "address": "0x80200B08",
+    "name": "call_80200B08"
+   },
+   {
+    "address": "0x80200B10",
+    "name": "call_80200B10"
+   },
+   {
+    "address": "0x80200F94",
+    "name": "call_80200F94"
+   },
+   {
+    "address": "0x80200FAC",
+    "name": "call_80200FAC"
+   },
+   {
+    "address": "0x80200FBC",
+    "name": "call_80200FBC"
+   },
+   {
+    "address": "0x80200FCC",
+    "name": "call_80200FCC"
+   },
+   {
+    "address": "0x80200FDC",
+    "name": "call_80200FDC"
+   },
+   {
+    "address": "0x80200FEC",
+    "name": "call_80200FEC"
+   },
+   {
+    "address": "0x80201D94",
+    "name": "call_80201D94"
+   },
+   {
+    "address": "0x80201DBC",
+    "name": "call_80201DBC"
+   },
+   {
+    "address": "0x80201E94",
+    "name": "call_80201E94"
+   },
+   {
+    "address": "0x80201ED4",
+    "name": "call_80201ED4"
+   },
+   {
+    "address": "0x80201F04",
+    "name": "call_80201F04"
+   },
+   {
+    "address": "0x80201FCC",
+    "name": "call_80201FCC"
+   }
+  ],
+  "e2m1bomb": [
+   {
+    "address": "0x80205404",
+    "name": "call_80205404"
+   },
+   {
+    "address": "0x80205424",
+    "name": "call_80205424"
+   }
+  ],
+  "hamhead": [
+   {
+    "address": "0x8020F484",
+    "name": "call_8020F484"
+   },
+   {
+    "address": "0x8020F490",
+    "name": "call_8020F490"
+   },
+   {
+    "address": "0x8020F4AC",
+    "name": "call_8020F4AC"
+   },
+   {
+    "address": "0x8020F4B8",
+    "name": "call_8020F4B8"
+   },
+   {
+    "address": "0x8020F4D4",
+    "name": "call_8020F4D4"
+   },
+   {
+    "address": "0x8020F4F0",
+    "name": "call_8020F4F0"
+   },
+   {
+    "address": "0x8020F4FC",
+    "name": "call_8020F4FC"
+   },
+   {
+    "address": "0x8020F528",
+    "name": "call_8020F528"
+   },
+   {
+    "address": "0x8020F544",
+    "name": "call_8020F544"
+   },
+   {
+    "address": "0x8020F560",
+    "name": "call_8020F560"
+   },
+   {
+    "address": "0x8020F57C",
+    "name": "call_8020F57C"
+   },
+   {
+    "address": "0x8020F598",
+    "name": "call_8020F598"
+   },
+   {
+    "address": "0x8020F5A4",
+    "name": "call_8020F5A4"
+   },
+   {
+    "address": "0x8020F5D0",
+    "name": "call_8020F5D0"
+   },
+   {
+    "address": "0x8020F5EC",
+    "name": "call_8020F5EC"
+   },
+   {
+    "address": "0x8020F618",
+    "name": "call_8020F618"
+   },
+   {
+    "address": "0x8020F624",
+    "name": "call_8020F624"
+   },
+   {
+    "address": "0x8020F650",
+    "name": "call_8020F650"
+   },
+   {
+    "address": "0x8020F69C",
+    "name": "call_8020F69C"
+   },
+   {
+    "address": "0x8020F6D8",
+    "name": "call_8020F6D8"
+   },
+   {
+    "address": "0x8020F6F4",
+    "name": "call_8020F6F4"
+   },
+   {
+    "address": "0x8020F710",
+    "name": "call_8020F710"
+   },
+   {
+    "address": "0x8020F72C",
+    "name": "call_8020F72C"
+   },
+   {
+    "address": "0x8020F778",
+    "name": "call_8020F778"
+   },
+   {
+    "address": "0x802105F0",
+    "name": "call_802105F0"
+   },
+   {
+    "address": "0x802105F8",
+    "name": "call_802105F8"
+   },
+   {
+    "address": "0x80210600",
+    "name": "call_80210600"
+   },
+   {
+    "address": "0x80210608",
+    "name": "call_80210608"
+   },
+   {
+    "address": "0x80210610",
+    "name": "call_80210610"
+   },
+   {
+    "address": "0x8021165C",
+    "name": "call_8021165C"
+   },
+   {
+    "address": "0x80211664",
+    "name": "call_80211664"
+   },
+   {
+    "address": "0x8021166C",
+    "name": "call_8021166C"
+   },
+   {
+    "address": "0x80211680",
+    "name": "call_80211680"
+   },
+   {
+    "address": "0x80211690",
+    "name": "call_80211690"
+   }
+  ],
+  "lizard": [
+   {
+    "address": "0x8021899C",
+    "name": "call_8021899C"
+   },
+   {
+    "address": "0x802189AC",
+    "name": "call_802189AC"
+   },
+   {
+    "address": "0x802189BC",
+    "name": "call_802189BC"
+   },
+   {
+    "address": "0x802189CC",
+    "name": "call_802189CC"
+   },
+   {
+    "address": "0x802189D4",
+    "name": "call_802189D4"
+   },
+   {
+    "address": "0x802189DC",
+    "name": "call_802189DC"
+   },
+   {
+    "address": "0x802189E4",
+    "name": "call_802189E4"
+   },
+   {
+    "address": "0x802189EC",
+    "name": "call_802189EC"
+   },
+   {
+    "address": "0x802189F4",
+    "name": "call_802189F4"
+   },
+   {
+    "address": "0x802189FC",
+    "name": "call_802189FC"
+   },
+   {
+    "address": "0x80218A04",
+    "name": "call_80218A04"
+   },
+   {
+    "address": "0x80218A0C",
+    "name": "call_80218A0C"
+   },
+   {
+    "address": "0x80218A14",
+    "name": "call_80218A14"
+   },
+   {
+    "address": "0x80218A1C",
+    "name": "call_80218A1C"
+   },
+   {
+    "address": "0x80218A24",
+    "name": "call_80218A24"
+   },
+   {
+    "address": "0x80218A2C",
+    "name": "call_80218A2C"
+   },
+   {
+    "address": "0x80218A34",
+    "name": "call_80218A34"
+   },
+   {
+    "address": "0x80218A3C",
+    "name": "call_80218A3C"
+   },
+   {
+    "address": "0x80218A44",
+    "name": "call_80218A44"
+   },
+   {
+    "address": "0x80218A4C",
+    "name": "call_80218A4C"
+   },
+   {
+    "address": "0x80218A54",
+    "name": "call_80218A54"
+   },
+   {
+    "address": "0x80218A5C",
+    "name": "call_80218A5C"
+   },
+   {
+    "address": "0x80218A64",
+    "name": "call_80218A64"
+   },
+   {
+    "address": "0x80218A6C",
+    "name": "call_80218A6C"
+   },
+   {
+    "address": "0x80218A74",
+    "name": "call_80218A74"
+   },
+   {
+    "address": "0x80218A7C",
+    "name": "call_80218A7C"
+   },
+   {
+    "address": "0x80218A84",
+    "name": "call_80218A84"
+   },
+   {
+    "address": "0x80218A8C",
+    "name": "call_80218A8C"
+   },
+   {
+    "address": "0x80218A94",
+    "name": "call_80218A94"
+   },
+   {
+    "address": "0x80218A9C",
+    "name": "call_80218A9C"
+   },
+   {
+    "address": "0x80218AA4",
+    "name": "call_80218AA4"
+   },
+   {
+    "address": "0x80218AAC",
+    "name": "call_80218AAC"
+   },
+   {
+    "address": "0x80218AB4",
+    "name": "call_80218AB4"
+   },
+   {
+    "address": "0x80218ABC",
+    "name": "call_80218ABC"
+   },
+   {
+    "address": "0x80218AC4",
+    "name": "call_80218AC4"
+   },
+   {
+    "address": "0x80218ACC",
+    "name": "call_80218ACC"
+   },
+   {
+    "address": "0x80218AD4",
+    "name": "call_80218AD4"
+   },
+   {
+    "address": "0x80218ADC",
+    "name": "call_80218ADC"
+   },
+   {
+    "address": "0x80218AE4",
+    "name": "call_80218AE4"
+   },
+   {
+    "address": "0x80218AEC",
+    "name": "call_80218AEC"
+   },
+   {
+    "address": "0x80218AF4",
+    "name": "call_80218AF4"
+   },
+   {
+    "address": "0x80218AFC",
+    "name": "call_80218AFC"
+   },
+   {
+    "address": "0x80218B04",
+    "name": "call_80218B04"
+   },
+   {
+    "address": "0x80218B08",
+    "name": "call_80218B08"
+   },
+   {
+    "address": "0x80218B14",
+    "name": "call_80218B14"
+   },
+   {
+    "address": "0x80218B18",
+    "name": "call_80218B18"
+   },
+   {
+    "address": "0x80218B24",
+    "name": "call_80218B24"
+   },
+   {
+    "address": "0x80218B34",
+    "name": "call_80218B34"
+   },
+   {
+    "address": "0x80218B40",
+    "name": "call_80218B40"
+   },
+   {
+    "address": "0x80218B50",
+    "name": "call_80218B50"
+   },
+   {
+    "address": "0x8021C548",
+    "name": "call_8021C548"
+   },
+   {
+    "address": "0x8021C56C",
+    "name": "call_8021C56C"
+   },
+   {
+    "address": "0x8021C580",
+    "name": "call_8021C580"
+   },
+   {
+    "address": "0x8021C598",
+    "name": "call_8021C598"
+   },
+   {
+    "address": "0x8021C5A4",
+    "name": "call_8021C5A4"
+   },
+   {
+    "address": "0x8021C5B4",
+    "name": "call_8021C5B4"
+   },
+   {
+    "address": "0x8021C5D0",
+    "name": "call_8021C5D0"
+   },
+   {
+    "address": "0x8021C5EC",
+    "name": "call_8021C5EC"
+   },
+   {
+    "address": "0x8021C624",
+    "name": "call_8021C624"
+   },
+   {
+    "address": "0x8021C644",
+    "name": "call_8021C644"
+   },
+   {
+    "address": "0x8021C67C",
+    "name": "call_8021C67C"
+   },
+   {
+    "address": "0x8021C824",
+    "name": "call_8021C824"
+   },
+   {
+    "address": "0x8021C85C",
+    "name": "call_8021C85C"
+   },
+   {
+    "address": "0x8021C868",
+    "name": "call_8021C868"
+   },
+   {
+    "address": "0x8021C8A0",
+    "name": "call_8021C8A0"
+   },
+   {
+    "address": "0x8021C8B0",
+    "name": "call_8021C8B0"
+   },
+   {
+    "address": "0x8021C8E8",
+    "name": "call_8021C8E8"
+   },
+   {
+    "address": "0x8021C950",
+    "name": "call_8021C950"
+   },
+   {
+    "address": "0x8021C988",
+    "name": "call_8021C988"
+   },
+   {
+    "address": "0x8021C9C8",
+    "name": "call_8021C9C8"
+   },
+   {
+    "address": "0x8021CA00",
+    "name": "call_8021CA00"
+   }
+  ],
+  "main": [
+   {
+    "address": "0x8001022C",
+    "name": "call_8001022C"
+   },
+   {
+    "address": "0x80010358",
+    "name": "call_80010358"
+   },
+   {
+    "address": "0x800104C8",
+    "name": "call_800104C8"
+   },
+   {
+    "address": "0x80010508",
+    "name": "call_80010508"
+   },
+   {
+    "address": "0x8002FE58",
+    "name": "call_8002FE58"
+   },
+   {
+    "address": "0x800300D0",
+    "name": "call_800300D0"
+   },
+   {
+    "address": "0x80047E14",
+    "name": "call_80047E14"
+   },
+   {
+    "address": "0x80047E34",
+    "name": "call_80047E34"
+   },
+   {
+    "address": "0x80047E80",
+    "name": "call_80047E80"
+   },
+   {
+    "address": "0x80048394",
+    "name": "call_80048394"
+   },
+   {
+    "address": "0x800483B4",
+    "name": "call_800483B4"
+   },
+   {
+    "address": "0x80048400",
+    "name": "call_80048400"
+   },
+   {
+    "address": "0x800510C8",
+    "name": "call_800510C8"
+   },
+   {
+    "address": "0x800510E4",
+    "name": "call_800510E4"
+   },
+   {
+    "address": "0x80051378",
+    "name": "call_80051378"
+   },
+   {
+    "address": "0x80051798",
+    "name": "call_80051798"
+   },
+   {
+    "address": "0x800517B4",
+    "name": "call_800517B4"
+   },
+   {
+    "address": "0x80051A48",
+    "name": "call_80051A48"
+   },
+   {
+    "address": "0x80065058",
+    "name": "call_80065058"
+   },
+   {
+    "address": "0x80065080",
+    "name": "call_80065080"
+   },
+   {
+    "address": "0x800650A8",
+    "name": "call_800650A8"
+   },
+   {
+    "address": "0x800650B4",
+    "name": "call_800650B4"
+   },
+   {
+    "address": "0x800650D0",
+    "name": "call_800650D0"
+   },
+   {
+    "address": "0x800650F0",
+    "name": "call_800650F0"
+   },
+   {
+    "address": "0x8006511C",
+    "name": "call_8006511C"
+   },
+   {
+    "address": "0x80065150",
+    "name": "call_80065150"
+   },
+   {
+    "address": "0x80065184",
+    "name": "call_80065184"
+   },
+   {
+    "address": "0x800651B4",
+    "name": "call_800651B4"
+   },
+   {
+    "address": "0x800651B8",
+    "name": "call_800651B8"
+   },
+   {
+    "address": "0x800651EC",
+    "name": "call_800651EC"
+   },
+   {
+    "address": "0x80065220",
+    "name": "call_80065220"
+   },
+   {
+    "address": "0x80065254",
+    "name": "call_80065254"
+   },
+   {
+    "address": "0x80065280",
+    "name": "call_80065280"
+   },
+   {
+    "address": "0x800652A8",
+    "name": "call_800652A8"
+   },
+   {
+    "address": "0x800652D0",
+    "name": "call_800652D0"
+   },
+   {
+    "address": "0x800652FC",
+    "name": "call_800652FC"
+   },
+   {
+    "address": "0x80065328",
+    "name": "call_80065328"
+   },
+   {
+    "address": "0x8006532C",
+    "name": "call_8006532C"
+   },
+   {
+    "address": "0x80065354",
+    "name": "call_80065354"
+   },
+   {
+    "address": "0x80065374",
+    "name": "call_80065374"
+   },
+   {
+    "address": "0x800653A0",
+    "name": "call_800653A0"
+   },
+   {
+    "address": "0x800653BC",
+    "name": "call_800653BC"
+   },
+   {
+    "address": "0x800653CC",
+    "name": "call_800653CC"
+   },
+   {
+    "address": "0x800653F8",
+    "name": "call_800653F8"
+   },
+   {
+    "address": "0x80065424",
+    "name": "call_80065424"
+   },
+   {
+    "address": "0x80065450",
+    "name": "call_80065450"
+   },
+   {
+    "address": "0x8006547C",
+    "name": "call_8006547C"
+   },
+   {
+    "address": "0x800654A8",
+    "name": "call_800654A8"
+   },
+   {
+    "address": "0x800654D4",
+    "name": "call_800654D4"
+   },
+   {
+    "address": "0x800654FC",
+    "name": "call_800654FC"
+   },
+   {
+    "address": "0x80065524",
+    "name": "call_80065524"
+   },
+   {
+    "address": "0x8006554C",
+    "name": "call_8006554C"
+   },
+   {
+    "address": "0x80065578",
+    "name": "call_80065578"
+   },
+   {
+    "address": "0x800655A8",
+    "name": "call_800655A8"
+   },
+   {
+    "address": "0x800655D4",
+    "name": "call_800655D4"
+   },
+   {
+    "address": "0x800655F4",
+    "name": "call_800655F4"
+   },
+   {
+    "address": "0x80065600",
+    "name": "call_80065600"
+   },
+   {
+    "address": "0x8006562C",
+    "name": "call_8006562C"
+   },
+   {
+    "address": "0x80065658",
+    "name": "call_80065658"
+   },
+   {
+    "address": "0x80065684",
+    "name": "call_80065684"
+   },
+   {
+    "address": "0x800656B0",
+    "name": "call_800656B0"
+   },
+   {
+    "address": "0x800656E4",
+    "name": "call_800656E4"
+   },
+   {
+    "address": "0x80065718",
+    "name": "call_80065718"
+   },
+   {
+    "address": "0x80065744",
+    "name": "call_80065744"
+   },
+   {
+    "address": "0x80065758",
+    "name": "call_80065758"
+   },
+   {
+    "address": "0x80065790",
+    "name": "call_80065790"
+   },
+   {
+    "address": "0x800657C4",
+    "name": "call_800657C4"
+   },
+   {
+    "address": "0x800657F0",
+    "name": "call_800657F0"
+   },
+   {
+    "address": "0x800657F8",
+    "name": "call_800657F8"
+   },
+   {
+    "address": "0x80065808",
+    "name": "call_80065808"
+   },
+   {
+    "address": "0x80065824",
+    "name": "call_80065824"
+   },
+   {
+    "address": "0x80065850",
+    "name": "call_80065850"
+   },
+   {
+    "address": "0x80065898",
+    "name": "call_80065898"
+   },
+   {
+    "address": "0x800658C0",
+    "name": "call_800658C0"
+   },
+   {
+    "address": "0x800658E8",
+    "name": "call_800658E8"
+   },
+   {
+    "address": "0x80065910",
+    "name": "call_80065910"
+   },
+   {
+    "address": "0x80065938",
+    "name": "call_80065938"
+   },
+   {
+    "address": "0x8006594C",
+    "name": "call_8006594C"
+   },
+   {
+    "address": "0x80065960",
+    "name": "call_80065960"
+   },
+   {
+    "address": "0x80065974",
+    "name": "call_80065974"
+   },
+   {
+    "address": "0x80065984",
+    "name": "call_80065984"
+   },
+   {
+    "address": "0x8006599C",
+    "name": "call_8006599C"
+   },
+   {
+    "address": "0x800659A8",
+    "name": "call_800659A8"
+   },
+   {
+    "address": "0x800659C4",
+    "name": "call_800659C4"
+   },
+   {
+    "address": "0x800659CC",
+    "name": "call_800659CC"
+   },
+   {
+    "address": "0x800659E4",
+    "name": "call_800659E4"
+   },
+   {
+    "address": "0x800659FC",
+    "name": "call_800659FC"
+   },
+   {
+    "address": "0x80065A10",
+    "name": "call_80065A10"
+   },
+   {
+    "address": "0x80065A24",
+    "name": "call_80065A24"
+   },
+   {
+    "address": "0x80065A44",
+    "name": "call_80065A44"
+   },
+   {
+    "address": "0x80065A48",
+    "name": "call_80065A48"
+   },
+   {
+    "address": "0x80065A78",
+    "name": "call_80065A78"
+   },
+   {
+    "address": "0x80065AA4",
+    "name": "call_80065AA4"
+   },
+   {
+    "address": "0x80065AAC",
+    "name": "call_80065AAC"
+   },
+   {
+    "address": "0x80065AE0",
+    "name": "call_80065AE0"
+   },
+   {
+    "address": "0x80065B14",
+    "name": "call_80065B14"
+   },
+   {
+    "address": "0x80065B24",
+    "name": "call_80065B24"
+   },
+   {
+    "address": "0x80065B48",
+    "name": "call_80065B48"
+   },
+   {
+    "address": "0x80065B74",
+    "name": "call_80065B74"
+   },
+   {
+    "address": "0x80065B9C",
+    "name": "call_80065B9C"
+   },
+   {
+    "address": "0x80065BC4",
+    "name": "call_80065BC4"
+   },
+   {
+    "address": "0x80065BF0",
+    "name": "call_80065BF0"
+   },
+   {
+    "address": "0x80065C1C",
+    "name": "call_80065C1C"
+   },
+   {
+    "address": "0x80065C48",
+    "name": "call_80065C48"
+   },
+   {
+    "address": "0x80065C68",
+    "name": "call_80065C68"
+   },
+   {
+    "address": "0x80065C74",
+    "name": "call_80065C74"
+   },
+   {
+    "address": "0x80065C84",
+    "name": "call_80065C84"
+   },
+   {
+    "address": "0x80065C94",
+    "name": "call_80065C94"
+   },
+   {
+    "address": "0x80065CA4",
+    "name": "call_80065CA4"
+   },
+   {
+    "address": "0x80065CC0",
+    "name": "call_80065CC0"
+   },
+   {
+    "address": "0x80065CEC",
+    "name": "call_80065CEC"
+   },
+   {
+    "address": "0x80065D18",
+    "name": "call_80065D18"
+   },
+   {
+    "address": "0x80065D44",
+    "name": "call_80065D44"
+   },
+   {
+    "address": "0x80065D70",
+    "name": "call_80065D70"
+   },
+   {
+    "address": "0x80065D9C",
+    "name": "call_80065D9C"
+   },
+   {
+    "address": "0x80065DC8",
+    "name": "call_80065DC8"
+   },
+   {
+    "address": "0x80065DF0",
+    "name": "call_80065DF0"
+   },
+   {
+    "address": "0x80065E18",
+    "name": "call_80065E18"
+   },
+   {
+    "address": "0x80065E40",
+    "name": "call_80065E40"
+   },
+   {
+    "address": "0x80065E6C",
+    "name": "call_80065E6C"
+   },
+   {
+    "address": "0x80065E9C",
+    "name": "call_80065E9C"
+   },
+   {
+    "address": "0x80065EC8",
+    "name": "call_80065EC8"
+   },
+   {
+    "address": "0x80065EF4",
+    "name": "call_80065EF4"
+   },
+   {
+    "address": "0x80065F20",
+    "name": "call_80065F20"
+   },
+   {
+    "address": "0x80065F4C",
+    "name": "call_80065F4C"
+   },
+   {
+    "address": "0x80065F78",
+    "name": "call_80065F78"
+   },
+   {
+    "address": "0x80065FA4",
+    "name": "call_80065FA4"
+   },
+   {
+    "address": "0x80065FD8",
+    "name": "call_80065FD8"
+   },
+   {
+    "address": "0x8006600C",
+    "name": "call_8006600C"
+   },
+   {
+    "address": "0x80066038",
+    "name": "call_80066038"
+   },
+   {
+    "address": "0x80066084",
+    "name": "call_80066084"
+   },
+   {
+    "address": "0x800660B8",
+    "name": "call_800660B8"
+   },
+   {
+    "address": "0x800660EC",
+    "name": "call_800660EC"
+   },
+   {
+    "address": "0x800660FC",
+    "name": "call_800660FC"
+   },
+   {
+    "address": "0x80066118",
+    "name": "call_80066118"
+   },
+   {
+    "address": "0x80066144",
+    "name": "call_80066144"
+   },
+   {
+    "address": "0x8006618C",
+    "name": "call_8006618C"
+   },
+   {
+    "address": "0x80066198",
+    "name": "call_80066198"
+   },
+   {
+    "address": "0x800661B4",
+    "name": "call_800661B4"
+   },
+   {
+    "address": "0x800661DC",
+    "name": "call_800661DC"
+   },
+   {
+    "address": "0x800661F0",
+    "name": "call_800661F0"
+   },
+   {
+    "address": "0x80066204",
+    "name": "call_80066204"
+   },
+   {
+    "address": "0x8006622C",
+    "name": "call_8006622C"
+   },
+   {
+    "address": "0x80066254",
+    "name": "call_80066254"
+   },
+   {
+    "address": "0x80066278",
+    "name": "call_80066278"
+   },
+   {
+    "address": "0x8006629C",
+    "name": "call_8006629C"
+   },
+   {
+    "address": "0x800662B0",
+    "name": "call_800662B0"
+   },
+   {
+    "address": "0x800662C0",
+    "name": "call_800662C0"
+   },
+   {
+    "address": "0x800662CC",
+    "name": "call_800662CC"
+   },
+   {
+    "address": "0x800662F0",
+    "name": "call_800662F0"
+   },
+   {
+    "address": "0x80066318",
+    "name": "call_80066318"
+   },
+   {
+    "address": "0x80066334",
+    "name": "call_80066334"
+   },
+   {
+    "address": "0x8006633C",
+    "name": "call_8006633C"
+   },
+   {
+    "address": "0x8006636C",
+    "name": "call_8006636C"
+   },
+   {
+    "address": "0x80066398",
+    "name": "call_80066398"
+   },
+   {
+    "address": "0x80066418",
+    "name": "call_80066418"
+   },
+   {
+    "address": "0x80066568",
+    "name": "call_80066568"
+   },
+   {
+    "address": "0x80066578",
+    "name": "call_80066578"
+   },
+   {
+    "address": "0x80066598",
+    "name": "call_80066598"
+   },
+   {
+    "address": "0x80066A8C",
+    "name": "call_80066A8C"
+   },
+   {
+    "address": "0x80066AE4",
+    "name": "call_80066AE4"
+   },
+   {
+    "address": "0x80066BA4",
+    "name": "call_80066BA4"
+   },
+   {
+    "address": "0x80066BC0",
+    "name": "call_80066BC0"
+   },
+   {
+    "address": "0x80066C28",
+    "name": "call_80066C28"
+   },
+   {
+    "address": "0x80066DC0",
+    "name": "call_80066DC0"
+   },
+   {
+    "address": "0x80066DD0",
+    "name": "call_80066DD0"
+   },
+   {
+    "address": "0x80066DF8",
+    "name": "call_80066DF8"
+   },
+   {
+    "address": "0x80066E50",
+    "name": "call_80066E50"
+   },
+   {
+    "address": "0x80066E70",
+    "name": "call_80066E70"
+   },
+   {
+    "address": "0x80066E84",
+    "name": "call_80066E84"
+   },
+   {
+    "address": "0x80066E8C",
+    "name": "call_80066E8C"
+   },
+   {
+    "address": "0x80066EA0",
+    "name": "call_80066EA0"
+   },
+   {
+    "address": "0x80066EB0",
+    "name": "call_80066EB0"
+   },
+   {
+    "address": "0x80066F0C",
+    "name": "call_80066F0C"
+   },
+   {
+    "address": "0x80066F24",
+    "name": "call_80066F24"
+   },
+   {
+    "address": "0x80066F40",
+    "name": "call_80066F40"
+   },
+   {
+    "address": "0x80066F58",
+    "name": "call_80066F58"
+   },
+   {
+    "address": "0x80066F60",
+    "name": "call_80066F60"
+   },
+   {
+    "address": "0x80066F80",
+    "name": "call_80066F80"
+   },
+   {
+    "address": "0x80066F98",
+    "name": "call_80066F98"
+   },
+   {
+    "address": "0x80066FF0",
+    "name": "call_80066FF0"
+   },
+   {
+    "address": "0x80067050",
+    "name": "call_80067050"
+   },
+   {
+    "address": "0x8006707C",
+    "name": "call_8006707C"
+   },
+   {
+    "address": "0x8006708C",
+    "name": "call_8006708C"
+   },
+   {
+    "address": "0x800670B8",
+    "name": "call_800670B8"
+   },
+   {
+    "address": "0x800670CC",
+    "name": "call_800670CC"
+   },
+   {
+    "address": "0x800670DC",
+    "name": "call_800670DC"
+   },
+   {
+    "address": "0x800670EC",
+    "name": "call_800670EC"
+   },
+   {
+    "address": "0x800670FC",
+    "name": "call_800670FC"
+   },
+   {
+    "address": "0x80067120",
+    "name": "call_80067120"
+   },
+   {
+    "address": "0x80067198",
+    "name": "call_80067198"
+   },
+   {
+    "address": "0x800671B0",
+    "name": "call_800671B0"
+   },
+   {
+    "address": "0x80067218",
+    "name": "call_80067218"
+   },
+   {
+    "address": "0x80067348",
+    "name": "call_80067348"
+   },
+   {
+    "address": "0x80067354",
+    "name": "call_80067354"
+   },
+   {
+    "address": "0x800673A0",
+    "name": "call_800673A0"
+   },
+   {
+    "address": "0x800673B0",
+    "name": "call_800673B0"
+   },
+   {
+    "address": "0x800673EC",
+    "name": "call_800673EC"
+   },
+   {
+    "address": "0x80067400",
+    "name": "call_80067400"
+   },
+   {
+    "address": "0x80067410",
+    "name": "call_80067410"
+   },
+   {
+    "address": "0x8006746C",
+    "name": "call_8006746C"
+   },
+   {
+    "address": "0x80067480",
+    "name": "call_80067480"
+   },
+   {
+    "address": "0x80067494",
+    "name": "call_80067494"
+   },
+   {
+    "address": "0x800674C4",
+    "name": "call_800674C4"
+   },
+   {
+    "address": "0x800674DC",
+    "name": "call_800674DC"
+   },
+   {
+    "address": "0x800674F4",
+    "name": "call_800674F4"
+   },
+   {
+    "address": "0x8006750C",
+    "name": "call_8006750C"
+   },
+   {
+    "address": "0x80067528",
+    "name": "call_80067528"
+   },
+   {
+    "address": "0x80067544",
+    "name": "call_80067544"
+   },
+   {
+    "address": "0x80067560",
+    "name": "call_80067560"
+   },
+   {
+    "address": "0x80067594",
+    "name": "call_80067594"
+   },
+   {
+    "address": "0x800675B8",
+    "name": "call_800675B8"
+   },
+   {
+    "address": "0x800675EC",
+    "name": "call_800675EC"
+   },
+   {
+    "address": "0x80067624",
+    "name": "call_80067624"
+   },
+   {
+    "address": "0x80067634",
+    "name": "call_80067634"
+   },
+   {
+    "address": "0x80067660",
+    "name": "call_80067660"
+   },
+   {
+    "address": "0x80067690",
+    "name": "call_80067690"
+   },
+   {
+    "address": "0x800676B4",
+    "name": "call_800676B4"
+   },
+   {
+    "address": "0x800676EC",
+    "name": "call_800676EC"
+   },
+   {
+    "address": "0x80067710",
+    "name": "call_80067710"
+   },
+   {
+    "address": "0x80067728",
+    "name": "call_80067728"
+   },
+   {
+    "address": "0x80067740",
+    "name": "call_80067740"
+   },
+   {
+    "address": "0x80067744",
+    "name": "call_80067744"
+   },
+   {
+    "address": "0x80067758",
+    "name": "call_80067758"
+   },
+   {
+    "address": "0x80067764",
+    "name": "call_80067764"
+   },
+   {
+    "address": "0x80067774",
+    "name": "call_80067774"
+   },
+   {
+    "address": "0x80067778",
+    "name": "call_80067778"
+   },
+   {
+    "address": "0x80067788",
+    "name": "call_80067788"
+   },
+   {
+    "address": "0x80067794",
+    "name": "call_80067794"
+   },
+   {
+    "address": "0x8006779C",
+    "name": "call_8006779C"
+   },
+   {
+    "address": "0x800677A4",
+    "name": "call_800677A4"
+   },
+   {
+    "address": "0x800677B0",
+    "name": "call_800677B0"
+   },
+   {
+    "address": "0x800677C4",
+    "name": "call_800677C4"
+   },
+   {
+    "address": "0x800677EC",
+    "name": "call_800677EC"
+   },
+   {
+    "address": "0x80067800",
+    "name": "call_80067800"
+   },
+   {
+    "address": "0x80067810",
+    "name": "call_80067810"
+   },
+   {
+    "address": "0x80067818",
+    "name": "call_80067818"
+   },
+   {
+    "address": "0x80067828",
+    "name": "call_80067828"
+   },
+   {
+    "address": "0x80067834",
+    "name": "call_80067834"
+   },
+   {
+    "address": "0x80067844",
+    "name": "call_80067844"
+   },
+   {
+    "address": "0x80067854",
+    "name": "call_80067854"
+   },
+   {
+    "address": "0x8006785C",
+    "name": "call_8006785C"
+   },
+   {
+    "address": "0x80067874",
+    "name": "call_80067874"
+   },
+   {
+    "address": "0x80067880",
+    "name": "call_80067880"
+   },
+   {
+    "address": "0x8006788C",
+    "name": "call_8006788C"
+   },
+   {
+    "address": "0x800678A4",
+    "name": "call_800678A4"
+   },
+   {
+    "address": "0x800678CC",
+    "name": "call_800678CC"
+   },
+   {
+    "address": "0x800678E4",
+    "name": "call_800678E4"
+   },
+   {
+    "address": "0x800678F4",
+    "name": "call_800678F4"
+   },
+   {
+    "address": "0x80067944",
+    "name": "call_80067944"
+   },
+   {
+    "address": "0x80067970",
+    "name": "call_80067970"
+   },
+   {
+    "address": "0x80067980",
+    "name": "call_80067980"
+   },
+   {
+    "address": "0x8006799C",
+    "name": "call_8006799C"
+   },
+   {
+    "address": "0x800679AC",
+    "name": "call_800679AC"
+   },
+   {
+    "address": "0x800679B8",
+    "name": "call_800679B8"
+   },
+   {
+    "address": "0x800679C0",
+    "name": "call_800679C0"
+   },
+   {
+    "address": "0x800679D0",
+    "name": "call_800679D0"
+   },
+   {
+    "address": "0x800679E0",
+    "name": "call_800679E0"
+   },
+   {
+    "address": "0x800679E4",
+    "name": "call_800679E4"
+   },
+   {
+    "address": "0x800679F0",
+    "name": "call_800679F0"
+   },
+   {
+    "address": "0x800679F8",
+    "name": "call_800679F8"
+   },
+   {
+    "address": "0x80067A0C",
+    "name": "call_80067A0C"
+   },
+   {
+    "address": "0x80067A14",
+    "name": "call_80067A14"
+   },
+   {
+    "address": "0x80067A20",
+    "name": "call_80067A20"
+   },
+   {
+    "address": "0x80067A30",
+    "name": "call_80067A30"
+   },
+   {
+    "address": "0x80067A50",
+    "name": "call_80067A50"
+   },
+   {
+    "address": "0x80067A64",
+    "name": "call_80067A64"
+   },
+   {
+    "address": "0x80067A78",
+    "name": "call_80067A78"
+   },
+   {
+    "address": "0x80067A8C",
+    "name": "call_80067A8C"
+   },
+   {
+    "address": "0x80067AA4",
+    "name": "call_80067AA4"
+   },
+   {
+    "address": "0x80067AA8",
+    "name": "call_80067AA8"
+   },
+   {
+    "address": "0x80067B0C",
+    "name": "call_80067B0C"
+   },
+   {
+    "address": "0x80067B3C",
+    "name": "call_80067B3C"
+   },
+   {
+    "address": "0x80067B6C",
+    "name": "call_80067B6C"
+   },
+   {
+    "address": "0x80067B94",
+    "name": "call_80067B94"
+   },
+   {
+    "address": "0x80067C0C",
+    "name": "call_80067C0C"
+   },
+   {
+    "address": "0x80067C2C",
+    "name": "call_80067C2C"
+   },
+   {
+    "address": "0x80067C3C",
+    "name": "call_80067C3C"
+   },
+   {
+    "address": "0x80067C50",
+    "name": "call_80067C50"
+   },
+   {
+    "address": "0x80067C58",
+    "name": "call_80067C58"
+   },
+   {
+    "address": "0x80067C78",
+    "name": "call_80067C78"
+   },
+   {
+    "address": "0x80067C98",
+    "name": "call_80067C98"
+   },
+   {
+    "address": "0x80067C9C",
+    "name": "call_80067C9C"
+   },
+   {
+    "address": "0x80067CAC",
+    "name": "call_80067CAC"
+   },
+   {
+    "address": "0x80067CC4",
+    "name": "call_80067CC4"
+   },
+   {
+    "address": "0x80067CE4",
+    "name": "call_80067CE4"
+   },
+   {
+    "address": "0x80067CE8",
+    "name": "call_80067CE8"
+   },
+   {
+    "address": "0x80067CFC",
+    "name": "call_80067CFC"
+   },
+   {
+    "address": "0x80067D0C",
+    "name": "call_80067D0C"
+   },
+   {
+    "address": "0x80067D38",
+    "name": "call_80067D38"
+   },
+   {
+    "address": "0x80067D64",
+    "name": "call_80067D64"
+   },
+   {
+    "address": "0x80067D68",
+    "name": "call_80067D68"
+   },
+   {
+    "address": "0x80067D7C",
+    "name": "call_80067D7C"
+   },
+   {
+    "address": "0x80067D90",
+    "name": "call_80067D90"
+   },
+   {
+    "address": "0x80067DBC",
+    "name": "call_80067DBC"
+   },
+   {
+    "address": "0x80067DC0",
+    "name": "call_80067DC0"
+   },
+   {
+    "address": "0x80067DD8",
+    "name": "call_80067DD8"
+   },
+   {
+    "address": "0x80067DE8",
+    "name": "call_80067DE8"
+   },
+   {
+    "address": "0x80067DF0",
+    "name": "call_80067DF0"
+   },
+   {
+    "address": "0x80067E08",
+    "name": "call_80067E08"
+   },
+   {
+    "address": "0x80067E1C",
+    "name": "call_80067E1C"
+   },
+   {
+    "address": "0x80067E24",
+    "name": "call_80067E24"
+   },
+   {
+    "address": "0x80067E40",
+    "name": "call_80067E40"
+   },
+   {
+    "address": "0x80067E5C",
+    "name": "call_80067E5C"
+   },
+   {
+    "address": "0x80067E90",
+    "name": "call_80067E90"
+   },
+   {
+    "address": "0x80067EB4",
+    "name": "call_80067EB4"
+   },
+   {
+    "address": "0x80067EBC",
+    "name": "call_80067EBC"
+   },
+   {
+    "address": "0x80067ECC",
+    "name": "call_80067ECC"
+   },
+   {
+    "address": "0x80067EE8",
+    "name": "call_80067EE8"
+   },
+   {
+    "address": "0x80067EFC",
+    "name": "call_80067EFC"
+   },
+   {
+    "address": "0x80067F20",
+    "name": "call_80067F20"
+   },
+   {
+    "address": "0x80067F24",
+    "name": "call_80067F24"
+   },
+   {
+    "address": "0x80067F30",
+    "name": "call_80067F30"
+   },
+   {
+    "address": "0x80067F4C",
+    "name": "call_80067F4C"
+   },
+   {
+    "address": "0x80067F5C",
+    "name": "call_80067F5C"
+   },
+   {
+    "address": "0x80067F74",
+    "name": "call_80067F74"
+   },
+   {
+    "address": "0x80067F8C",
+    "name": "call_80067F8C"
+   },
+   {
+    "address": "0x80067F9C",
+    "name": "call_80067F9C"
+   },
+   {
+    "address": "0x80067FB0",
+    "name": "call_80067FB0"
+   },
+   {
+    "address": "0x80067FC4",
+    "name": "call_80067FC4"
+   },
+   {
+    "address": "0x80067FD8",
+    "name": "call_80067FD8"
+   },
+   {
+    "address": "0x80067FE8",
+    "name": "call_80067FE8"
+   },
+   {
+    "address": "0x8006800C",
+    "name": "call_8006800C"
+   },
+   {
+    "address": "0x80068044",
+    "name": "call_80068044"
+   },
+   {
+    "address": "0x8006805C",
+    "name": "call_8006805C"
+   },
+   {
+    "address": "0x80068074",
+    "name": "call_80068074"
+   },
+   {
+    "address": "0x80068090",
+    "name": "call_80068090"
+   },
+   {
+    "address": "0x800680A0",
+    "name": "call_800680A0"
+   },
+   {
+    "address": "0x800680A4",
+    "name": "call_800680A4"
+   },
+   {
+    "address": "0x800680B0",
+    "name": "call_800680B0"
+   },
+   {
+    "address": "0x800680B8",
+    "name": "call_800680B8"
+   },
+   {
+    "address": "0x800680C4",
+    "name": "call_800680C4"
+   },
+   {
+    "address": "0x800680CC",
+    "name": "call_800680CC"
+   },
+   {
+    "address": "0x800680E0",
+    "name": "call_800680E0"
+   },
+   {
+    "address": "0x80068108",
+    "name": "call_80068108"
+   },
+   {
+    "address": "0x80068124",
+    "name": "call_80068124"
+   },
+   {
+    "address": "0x8006812C",
+    "name": "call_8006812C"
+   },
+   {
+    "address": "0x80068144",
+    "name": "call_80068144"
+   },
+   {
+    "address": "0x80068160",
+    "name": "call_80068160"
+   },
+   {
+    "address": "0x80068178",
+    "name": "call_80068178"
+   },
+   {
+    "address": "0x8006819C",
+    "name": "call_8006819C"
+   },
+   {
+    "address": "0x800681C4",
+    "name": "call_800681C4"
+   },
+   {
+    "address": "0x800681D0",
+    "name": "call_800681D0"
+   },
+   {
+    "address": "0x800681E0",
+    "name": "call_800681E0"
+   },
+   {
+    "address": "0x800681E8",
+    "name": "call_800681E8"
+   },
+   {
+    "address": "0x80068210",
+    "name": "call_80068210"
+   },
+   {
+    "address": "0x80068220",
+    "name": "call_80068220"
+   },
+   {
+    "address": "0x80068248",
+    "name": "call_80068248"
+   },
+   {
+    "address": "0x80068268",
+    "name": "call_80068268"
+   },
+   {
+    "address": "0x80068298",
+    "name": "call_80068298"
+   },
+   {
+    "address": "0x800682B8",
+    "name": "call_800682B8"
+   },
+   {
+    "address": "0x800682D0",
+    "name": "call_800682D0"
+   },
+   {
+    "address": "0x800682D4",
+    "name": "call_800682D4"
+   },
+   {
+    "address": "0x800682EC",
+    "name": "call_800682EC"
+   },
+   {
+    "address": "0x80068300",
+    "name": "call_80068300"
+   },
+   {
+    "address": "0x80068314",
+    "name": "call_80068314"
+   },
+   {
+    "address": "0x80068328",
+    "name": "call_80068328"
+   },
+   {
+    "address": "0x8006833C",
+    "name": "call_8006833C"
+   },
+   {
+    "address": "0x8006834C",
+    "name": "call_8006834C"
+   },
+   {
+    "address": "0x8006836C",
+    "name": "call_8006836C"
+   },
+   {
+    "address": "0x80068380",
+    "name": "call_80068380"
+   },
+   {
+    "address": "0x80068394",
+    "name": "call_80068394"
+   },
+   {
+    "address": "0x800683A8",
+    "name": "call_800683A8"
+   },
+   {
+    "address": "0x800683E8",
+    "name": "call_800683E8"
+   },
+   {
+    "address": "0x80068414",
+    "name": "call_80068414"
+   },
+   {
+    "address": "0x80068418",
+    "name": "call_80068418"
+   },
+   {
+    "address": "0x80068458",
+    "name": "call_80068458"
+   },
+   {
+    "address": "0x800684CC",
+    "name": "call_800684CC"
+   },
+   {
+    "address": "0x800684D0",
+    "name": "call_800684D0"
+   },
+   {
+    "address": "0x80068508",
+    "name": "call_80068508"
+   },
+   {
+    "address": "0x8006851C",
+    "name": "call_8006851C"
+   },
+   {
+    "address": "0x80068544",
+    "name": "call_80068544"
+   },
+   {
+    "address": "0x80068554",
+    "name": "call_80068554"
+   },
+   {
+    "address": "0x80068570",
+    "name": "call_80068570"
+   },
+   {
+    "address": "0x80068574",
+    "name": "call_80068574"
+   },
+   {
+    "address": "0x80068594",
+    "name": "call_80068594"
+   },
+   {
+    "address": "0x800685B4",
+    "name": "call_800685B4"
+   },
+   {
+    "address": "0x800685FC",
+    "name": "call_800685FC"
+   },
+   {
+    "address": "0x8006861C",
+    "name": "call_8006861C"
+   },
+   {
+    "address": "0x8006863C",
+    "name": "call_8006863C"
+   },
+   {
+    "address": "0x80068684",
+    "name": "call_80068684"
+   },
+   {
+    "address": "0x800686A4",
+    "name": "call_800686A4"
+   },
+   {
+    "address": "0x800686CC",
+    "name": "call_800686CC"
+   },
+   {
+    "address": "0x80068714",
+    "name": "call_80068714"
+   },
+   {
+    "address": "0x8006875C",
+    "name": "call_8006875C"
+   },
+   {
+    "address": "0x800687A4",
+    "name": "call_800687A4"
+   },
+   {
+    "address": "0x800687EC",
+    "name": "call_800687EC"
+   },
+   {
+    "address": "0x80068834",
+    "name": "call_80068834"
+   },
+   {
+    "address": "0x80068868",
+    "name": "call_80068868"
+   },
+   {
+    "address": "0x80068870",
+    "name": "call_80068870"
+   },
+   {
+    "address": "0x8006891C",
+    "name": "call_8006891C"
+   },
+   {
+    "address": "0x8006892C",
+    "name": "call_8006892C"
+   },
+   {
+    "address": "0x8006895C",
+    "name": "call_8006895C"
+   },
+   {
+    "address": "0x80068984",
+    "name": "call_80068984"
+   },
+   {
+    "address": "0x800689AC",
+    "name": "call_800689AC"
+   },
+   {
+    "address": "0x800689D4",
+    "name": "call_800689D4"
+   },
+   {
+    "address": "0x800689FC",
+    "name": "call_800689FC"
+   },
+   {
+    "address": "0x80068A24",
+    "name": "call_80068A24"
+   },
+   {
+    "address": "0x80068A38",
+    "name": "call_80068A38"
+   },
+   {
+    "address": "0x80068AF0",
+    "name": "call_80068AF0"
+   },
+   {
+    "address": "0x80068B00",
+    "name": "call_80068B00"
+   },
+   {
+    "address": "0x80068B10",
+    "name": "call_80068B10"
+   },
+   {
+    "address": "0x80068B24",
+    "name": "call_80068B24"
+   },
+   {
+    "address": "0x80068B40",
+    "name": "call_80068B40"
+   },
+   {
+    "address": "0x80068B68",
+    "name": "call_80068B68"
+   },
+   {
+    "address": "0x80068B84",
+    "name": "call_80068B84"
+   },
+   {
+    "address": "0x80068C30",
+    "name": "call_80068C30"
+   },
+   {
+    "address": "0x80068C40",
+    "name": "call_80068C40"
+   },
+   {
+    "address": "0x80068C80",
+    "name": "call_80068C80"
+   },
+   {
+    "address": "0x80068CA8",
+    "name": "call_80068CA8"
+   },
+   {
+    "address": "0x80068CC8",
+    "name": "call_80068CC8"
+   },
+   {
+    "address": "0x80068CF8",
+    "name": "call_80068CF8"
+   },
+   {
+    "address": "0x80068D30",
+    "name": "call_80068D30"
+   },
+   {
+    "address": "0x80068D88",
+    "name": "call_80068D88"
+   },
+   {
+    "address": "0x80068E74",
+    "name": "call_80068E74"
+   },
+   {
+    "address": "0x80068EB8",
+    "name": "call_80068EB8"
+   },
+   {
+    "address": "0x80068F2C",
+    "name": "call_80068F2C"
+   },
+   {
+    "address": "0x80068F68",
+    "name": "call_80068F68"
+   },
+   {
+    "address": "0x80068FA4",
+    "name": "call_80068FA4"
+   },
+   {
+    "address": "0x80068FD0",
+    "name": "call_80068FD0"
+   },
+   {
+    "address": "0x80068FD4",
+    "name": "call_80068FD4"
+   },
+   {
+    "address": "0x80088644",
+    "name": "call_80088644"
+   },
+   {
+    "address": "0x800886D0",
+    "name": "call_800886D0"
+   },
+   {
+    "address": "0x80089340",
+    "name": "call_80089340"
+   },
+   {
+    "address": "0x80089384",
+    "name": "call_80089384"
+   },
+   {
+    "address": "0x800893D8",
+    "name": "call_800893D8"
+   },
+   {
+    "address": "0x80089830",
+    "name": "call_80089830"
+   },
+   {
+    "address": "0x80089894",
+    "name": "call_80089894"
+   },
+   {
+    "address": "0x8008A08C",
+    "name": "call_8008A08C"
+   },
+   {
+    "address": "0x8008A538",
+    "name": "call_8008A538"
+   },
+   {
+    "address": "0x8008A59C",
+    "name": "call_8008A59C"
+   },
+   {
+    "address": "0x800C2AEC",
+    "name": "call_800C2AEC"
+   },
+   {
+    "address": "0x800C39A4",
+    "name": "call_800C39A4"
+   }
+  ],
+  "samurai": [
+   {
+    "address": "0x802246F8",
+    "name": "call_802246F8"
+   },
+   {
+    "address": "0x80224710",
+    "name": "call_80224710"
+   },
+   {
+    "address": "0x80224744",
+    "name": "call_80224744"
+   },
+   {
+    "address": "0x80224754",
+    "name": "call_80224754"
+   },
+   {
+    "address": "0x8022475C",
+    "name": "call_8022475C"
+   },
+   {
+    "address": "0x80224780",
+    "name": "call_80224780"
+   },
+   {
+    "address": "0x802247A0",
+    "name": "call_802247A0"
+   },
+   {
+    "address": "0x802247B4",
+    "name": "call_802247B4"
+   },
+   {
+    "address": "0x802247CC",
+    "name": "call_802247CC"
+   },
+   {
+    "address": "0x80224800",
+    "name": "call_80224800"
+   }
+  ],
+  "sandman2": [
+   {
+    "address": "0x8022E07C",
+    "name": "call_8022E07C"
+   },
+   {
+    "address": "0x8022E234",
+    "name": "call_8022E234"
+   }
+  ],
+  "selectro": [
+   {
+    "address": "0x80237D18",
+    "name": "call_80237D18"
+   },
+   {
+    "address": "0x80237D70",
+    "name": "call_80237D70"
+   },
+   {
+    "address": "0x80237D74",
+    "name": "call_80237D74"
+   },
+   {
+    "address": "0x80237DD0",
+    "name": "call_80237DD0"
+   },
+   {
+    "address": "0x80237DD4",
+    "name": "call_80237DD4"
+   },
+   {
+    "address": "0x80237DEC",
+    "name": "call_80237DEC"
+   },
+   {
+    "address": "0x80237DF0",
+    "name": "call_80237DF0"
+   },
+   {
+    "address": "0x80237E4C",
+    "name": "call_80237E4C"
+   },
+   {
+    "address": "0x80237E50",
+    "name": "call_80237E50"
+   }
+  ],
+  "sentry": [
+   {
+    "address": "0x8023AE10",
+    "name": "call_8023AE10"
+   },
+   {
+    "address": "0x8023AE38",
+    "name": "call_8023AE38"
+   },
+   {
+    "address": "0x8023AE40",
+    "name": "call_8023AE40"
+   },
+   {
+    "address": "0x8023AE54",
+    "name": "call_8023AE54"
+   },
+   {
+    "address": "0x8023AE84",
+    "name": "call_8023AE84"
+   },
+   {
+    "address": "0x8023AE9C",
+    "name": "call_8023AE9C"
+   },
+   {
+    "address": "0x8023AEB4",
+    "name": "call_8023AEB4"
+   },
+   {
+    "address": "0x8023AECC",
+    "name": "call_8023AECC"
+   }
+  ],
+  "shell": [
+   {
+    "address": "0x80242148",
+    "name": "call_80242148"
+   },
+   {
+    "address": "0x80242188",
+    "name": "call_80242188"
+   },
+   {
+    "address": "0x802421AC",
+    "name": "call_802421AC"
+   },
+   {
+    "address": "0x802421D8",
+    "name": "call_802421D8"
+   },
+   {
+    "address": "0x802421E8",
+    "name": "call_802421E8"
+   },
+   {
+    "address": "0x80242234",
+    "name": "call_80242234"
+   },
+   {
+    "address": "0x80248278",
+    "name": "call_80248278"
+   },
+   {
+    "address": "0x8024827C",
+    "name": "call_8024827C"
+   },
+   {
+    "address": "0x80248284",
+    "name": "call_80248284"
+   },
+   {
+    "address": "0x80248288",
+    "name": "call_80248288"
+   },
+   {
+    "address": "0x80248290",
+    "name": "call_80248290"
+   },
+   {
+    "address": "0x80248294",
+    "name": "call_80248294"
+   },
+   {
+    "address": "0x8024829C",
+    "name": "call_8024829C"
+   },
+   {
+    "address": "0x802482A0",
+    "name": "call_802482A0"
+   },
+   {
+    "address": "0x802482A8",
+    "name": "call_802482A8"
+   },
+   {
+    "address": "0x802482AC",
+    "name": "call_802482AC"
+   },
+   {
+    "address": "0x802482B4",
+    "name": "call_802482B4"
+   },
+   {
+    "address": "0x802482B8",
+    "name": "call_802482B8"
+   },
+   {
+    "address": "0x802482C0",
+    "name": "call_802482C0"
+   },
+   {
+    "address": "0x802482C4",
+    "name": "call_802482C4"
+   },
+   {
+    "address": "0x802482D8",
+    "name": "call_802482D8"
+   },
+   {
+    "address": "0x802482DC",
+    "name": "call_802482DC"
+   },
+   {
+    "address": "0x802482E8",
+    "name": "call_802482E8"
+   },
+   {
+    "address": "0x802482EC",
+    "name": "call_802482EC"
+   },
+   {
+    "address": "0x802491AC",
+    "name": "call_802491AC"
+   },
+   {
+    "address": "0x802491E4",
+    "name": "call_802491E4"
+   },
+   {
+    "address": "0x802491F0",
+    "name": "call_802491F0"
+   },
+   {
+    "address": "0x802491F8",
+    "name": "call_802491F8"
+   },
+   {
+    "address": "0x8024920C",
+    "name": "call_8024920C"
+   },
+   {
+    "address": "0x80249220",
+    "name": "call_80249220"
+   },
+   {
+    "address": "0x80249228",
+    "name": "call_80249228"
+   },
+   {
+    "address": "0x80249234",
+    "name": "call_80249234"
+   },
+   {
+    "address": "0x8024923C",
+    "name": "call_8024923C"
+   },
+   {
+    "address": "0x80249248",
+    "name": "call_80249248"
+   },
+   {
+    "address": "0x80249250",
+    "name": "call_80249250"
+   },
+   {
+    "address": "0x8024925C",
+    "name": "call_8024925C"
+   },
+   {
+    "address": "0x80249264",
+    "name": "call_80249264"
+   },
+   {
+    "address": "0x80249278",
+    "name": "call_80249278"
+   },
+   {
+    "address": "0x8024928C",
+    "name": "call_8024928C"
+   },
+   {
+    "address": "0x802492A0",
+    "name": "call_802492A0"
+   },
+   {
+    "address": "0x8024C7A8",
+    "name": "call_8024C7A8"
+   },
+   {
+    "address": "0x8024C800",
+    "name": "call_8024C800"
+   },
+   {
+    "address": "0x8024C830",
+    "name": "call_8024C830"
+   },
+   {
+    "address": "0x8024C878",
+    "name": "call_8024C878"
+   },
+   {
+    "address": "0x8024C888",
+    "name": "call_8024C888"
+   },
+   {
+    "address": "0x8024C900",
+    "name": "call_8024C900"
+   },
+   {
+    "address": "0x8024C908",
+    "name": "call_8024C908"
+   },
+   {
+    "address": "0x8024C960",
+    "name": "call_8024C960"
+   },
+   {
+    "address": "0x8024C990",
+    "name": "call_8024C990"
+   },
+   {
+    "address": "0x8024C99C",
+    "name": "call_8024C99C"
+   },
+   {
+    "address": "0x8024C9E8",
+    "name": "call_8024C9E8"
+   },
+   {
+    "address": "0x8024CA24",
+    "name": "call_8024CA24"
+   },
+   {
+    "address": "0x8024CA70",
+    "name": "call_8024CA70"
+   },
+   {
+    "address": "0x8024CA90",
+    "name": "call_8024CA90"
+   },
+   {
+    "address": "0x8024CB08",
+    "name": "call_8024CB08"
+   },
+   {
+    "address": "0x8024CB18",
+    "name": "call_8024CB18"
+   },
+   {
+    "address": "0x8024CB54",
+    "name": "call_8024CB54"
+   },
+   {
+    "address": "0x8024CB84",
+    "name": "call_8024CB84"
+   },
+   {
+    "address": "0x8024CB90",
+    "name": "call_8024CB90"
+   },
+   {
+    "address": "0x8024CBDC",
+    "name": "call_8024CBDC"
+   },
+   {
+    "address": "0x8024CBE0",
+    "name": "call_8024CBE0"
+   },
+   {
+    "address": "0x8024CC0C",
+    "name": "call_8024CC0C"
+   },
+   {
+    "address": "0x8024CC68",
+    "name": "call_8024CC68"
+   },
+   {
+    "address": "0x8024CD6C",
+    "name": "call_8024CD6C"
+   },
+   {
+    "address": "0x8024CDF4",
+    "name": "call_8024CDF4"
+   },
+   {
+    "address": "0x80250824",
+    "name": "call_80250824"
+   },
+   {
+    "address": "0x80250844",
+    "name": "call_80250844"
+   },
+   {
+    "address": "0x80250A90",
+    "name": "call_80250A90"
+   },
+   {
+    "address": "0x80250AC8",
+    "name": "call_80250AC8"
+   },
+   {
+    "address": "0x80250C24",
+    "name": "call_80250C24"
+   },
+   {
+    "address": "0x80250E50",
+    "name": "call_80250E50"
+   },
+   {
+    "address": "0x80250E54",
+    "name": "call_80250E54"
+   },
+   {
+    "address": "0x80250FE4",
+    "name": "call_80250FE4"
+   },
+   {
+    "address": "0x8025198C",
+    "name": "call_8025198C"
+   },
+   {
+    "address": "0x80251B18",
+    "name": "call_80251B18"
+   },
+   {
+    "address": "0x80252DAC",
+    "name": "call_80252DAC"
+   }
+  ],
+  "shocker": [
+   {
+    "address": "0x80254A98",
+    "name": "call_80254A98"
+   },
+   {
+    "address": "0x80254A9C",
+    "name": "call_80254A9C"
+   },
+   {
+    "address": "0x80254B18",
+    "name": "call_80254B18"
+   },
+   {
+    "address": "0x80254B1C",
+    "name": "call_80254B1C"
+   },
+   {
+    "address": "0x80254B24",
+    "name": "call_80254B24"
+   },
+   {
+    "address": "0x80254B28",
+    "name": "call_80254B28"
+   },
+   {
+    "address": "0x80254B3C",
+    "name": "call_80254B3C"
+   },
+   {
+    "address": "0x80254B40",
+    "name": "call_80254B40"
+   },
+   {
+    "address": "0x80254B48",
+    "name": "call_80254B48"
+   },
+   {
+    "address": "0x80254B4C",
+    "name": "call_80254B4C"
+   },
+   {
+    "address": "0x80254B54",
+    "name": "call_80254B54"
+   },
+   {
+    "address": "0x80254B58",
+    "name": "call_80254B58"
+   },
+   {
+    "address": "0x80254B88",
+    "name": "call_80254B88"
+   },
+   {
+    "address": "0x80254B8C",
+    "name": "call_80254B8C"
+   },
+   {
+    "address": "0x80254BBC",
+    "name": "call_80254BBC"
+   },
+   {
+    "address": "0x80254BC0",
+    "name": "call_80254BC0"
+   },
+   {
+    "address": "0x80255624",
+    "name": "call_80255624"
+   },
+   {
+    "address": "0x8025563C",
+    "name": "call_8025563C"
+   },
+   {
+    "address": "0x802556C8",
+    "name": "call_802556C8"
+   },
+   {
+    "address": "0x80255790",
+    "name": "call_80255790"
+   },
+   {
+    "address": "0x80255794",
+    "name": "call_80255794"
+   },
+   {
+    "address": "0x80255848",
+    "name": "call_80255848"
+   },
+   {
+    "address": "0x8025584C",
+    "name": "call_8025584C"
+   }
+  ],
+  "thug": [
+   {
+    "address": "0x8026A21C",
+    "name": "call_8026A21C"
+   },
+   {
+    "address": "0x8026A234",
+    "name": "call_8026A234"
+   },
+   {
+    "address": "0x8026A23C",
+    "name": "call_8026A23C"
+   },
+   {
+    "address": "0x8026A248",
+    "name": "call_8026A248"
+   },
+   {
+    "address": "0x8026A254",
+    "name": "call_8026A254"
+   },
+   {
+    "address": "0x8026A25C",
+    "name": "call_8026A25C"
+   },
+   {
+    "address": "0x8026A268",
+    "name": "call_8026A268"
+   },
+   {
+    "address": "0x8026A270",
+    "name": "call_8026A270"
+   },
+   {
+    "address": "0x8026A27C",
+    "name": "call_8026A27C"
+   },
+   {
+    "address": "0x8026A288",
+    "name": "call_8026A288"
+   },
+   {
+    "address": "0x8026A290",
+    "name": "call_8026A290"
+   },
+   {
+    "address": "0x8026A2A8",
+    "name": "call_8026A2A8"
+   },
+   {
+    "address": "0x8026A908",
+    "name": "call_8026A908"
+   },
+   {
+    "address": "0x8026A928",
+    "name": "call_8026A928"
+   },
+   {
+    "address": "0x8026A9D4",
+    "name": "call_8026A9D4"
+   },
+   {
+    "address": "0x8026A9F4",
+    "name": "call_8026A9F4"
+   },
+   {
+    "address": "0x8026AC60",
+    "name": "call_8026AC60"
+   },
+   {
+    "address": "0x8026AC80",
+    "name": "call_8026AC80"
+   },
+   {
+    "address": "0x8026AD18",
+    "name": "call_8026AD18"
+   },
+   {
+    "address": "0x8026AD38",
+    "name": "call_8026AD38"
+   },
+   {
+    "address": "0x8026B08C",
+    "name": "call_8026B08C"
+   },
+   {
+    "address": "0x8026B0AC",
+    "name": "call_8026B0AC"
+   },
+   {
+    "address": "0x8026B174",
+    "name": "call_8026B174"
+   },
+   {
+    "address": "0x8026B18C",
+    "name": "call_8026B18C"
+   },
+   {
+    "address": "0x8026B194",
+    "name": "call_8026B194"
+   },
+   {
+    "address": "0x8026B1AC",
+    "name": "call_8026B1AC"
+   },
+   {
+    "address": "0x8026B1F4",
+    "name": "call_8026B1F4"
+   },
+   {
+    "address": "0x8026B214",
+    "name": "call_8026B214"
+   },
+   {
+    "address": "0x8026B240",
+    "name": "call_8026B240"
+   },
+   {
+    "address": "0x8026B260",
+    "name": "call_8026B260"
+   },
+   {
+    "address": "0x8026B284",
+    "name": "call_8026B284"
+   },
+   {
+    "address": "0x8026B2A4",
+    "name": "call_8026B2A4"
+   },
+   {
+    "address": "0x8026BAFC",
+    "name": "call_8026BAFC"
+   },
+   {
+    "address": "0x8026BB1C",
+    "name": "call_8026BB1C"
+   },
+   {
+    "address": "0x8026BB34",
+    "name": "call_8026BB34"
+   },
+   {
+    "address": "0x8026BB54",
+    "name": "call_8026BB54"
+   },
+   {
+    "address": "0x8026BB9C",
+    "name": "call_8026BB9C"
+   },
+   {
+    "address": "0x8026BBBC",
+    "name": "call_8026BBBC"
+   },
+   {
+    "address": "0x8026BDD8",
+    "name": "call_8026BDD8"
+   },
+   {
+    "address": "0x8026BDF8",
+    "name": "call_8026BDF8"
+   },
+   {
+    "address": "0x8026BE98",
+    "name": "call_8026BE98"
+   },
+   {
+    "address": "0x8026BEB8",
+    "name": "call_8026BEB8"
+   },
+   {
+    "address": "0x8026BF24",
+    "name": "call_8026BF24"
+   },
+   {
+    "address": "0x8026BF44",
+    "name": "call_8026BF44"
+   },
+   {
+    "address": "0x8026BF60",
+    "name": "call_8026BF60"
+   },
+   {
+    "address": "0x8026BF80",
+    "name": "call_8026BF80"
+   },
+   {
+    "address": "0x8026D7AC",
+    "name": "call_8026D7AC"
+   },
+   {
+    "address": "0x8026D7CC",
+    "name": "call_8026D7CC"
+   },
+   {
+    "address": "0x8026D860",
+    "name": "call_8026D860"
+   },
+   {
+    "address": "0x8026D878",
+    "name": "call_8026D878"
+   },
+   {
+    "address": "0x8026D880",
+    "name": "call_8026D880"
+   },
+   {
+    "address": "0x8026D898",
+    "name": "call_8026D898"
+   },
+   {
+    "address": "0x8026D8FC",
+    "name": "call_8026D8FC"
+   },
+   {
+    "address": "0x8026D91C",
+    "name": "call_8026D91C"
+   },
+   {
+    "address": "0x8026D9D8",
+    "name": "call_8026D9D8"
+   },
+   {
+    "address": "0x8026D9F8",
+    "name": "call_8026D9F8"
+   },
+   {
+    "address": "0x8026DAF4",
+    "name": "call_8026DAF4"
+   },
+   {
+    "address": "0x8026DB14",
+    "name": "call_8026DB14"
+   },
+   {
+    "address": "0x8026DB58",
+    "name": "call_8026DB58"
+   },
+   {
+    "address": "0x8026DB78",
+    "name": "call_8026DB78"
+   },
+   {
+    "address": "0x8026DE2C",
+    "name": "call_8026DE2C"
+   },
+   {
+    "address": "0x8026DE4C",
+    "name": "call_8026DE4C"
+   },
+   {
+    "address": "0x8026DE68",
+    "name": "call_8026DE68"
+   },
+   {
+    "address": "0x8026DE88",
+    "name": "call_8026DE88"
+   },
+   {
+    "address": "0x8026E4C4",
+    "name": "call_8026E4C4"
+   },
+   {
+    "address": "0x8026E4E4",
+    "name": "call_8026E4E4"
+   },
+   {
+    "address": "0x8026E58C",
+    "name": "call_8026E58C"
+   },
+   {
+    "address": "0x8026E5AC",
+    "name": "call_8026E5AC"
+   },
+   {
+    "address": "0x8026E5F4",
+    "name": "call_8026E5F4"
+   },
+   {
+    "address": "0x8026E614",
+    "name": "call_8026E614"
+   },
+   {
+    "address": "0x8026E740",
+    "name": "call_8026E740"
+   },
+   {
+    "address": "0x8026E760",
+    "name": "call_8026E760"
+   },
+   {
+    "address": "0x8026E934",
+    "name": "call_8026E934"
+   },
+   {
+    "address": "0x8026E954",
+    "name": "call_8026E954"
+   },
+   {
+    "address": "0x8026F594",
+    "name": "call_8026F594"
+   },
+   {
+    "address": "0x8026F5B4",
+    "name": "call_8026F5B4"
+   },
+   {
+    "address": "0x8026F5D0",
+    "name": "call_8026F5D0"
+   },
+   {
+    "address": "0x8026F5F0",
+    "name": "call_8026F5F0"
+   },
+   {
+    "address": "0x8026F6FC",
+    "name": "call_8026F6FC"
+   },
+   {
+    "address": "0x8026F71C",
+    "name": "call_8026F71C"
+   },
+   {
+    "address": "0x8026F770",
+    "name": "call_8026F770"
+   },
+   {
+    "address": "0x8026F790",
+    "name": "call_8026F790"
+   },
+   {
+    "address": "0x8026F798",
+    "name": "call_8026F798"
+   },
+   {
+    "address": "0x8026F7B8",
+    "name": "call_8026F7B8"
+   },
+   {
+    "address": "0x802700A0",
+    "name": "call_802700A0"
+   },
+   {
+    "address": "0x802700C0",
+    "name": "call_802700C0"
+   },
+   {
+    "address": "0x80270220",
+    "name": "call_80270220"
+   },
+   {
+    "address": "0x80270240",
+    "name": "call_80270240"
+   },
+   {
+    "address": "0x8027028C",
+    "name": "call_8027028C"
+   },
+   {
+    "address": "0x802702AC",
+    "name": "call_802702AC"
+   },
+   {
+    "address": "0x802702DC",
+    "name": "call_802702DC"
+   },
+   {
+    "address": "0x802702FC",
+    "name": "call_802702FC"
+   },
+   {
+    "address": "0x80270318",
+    "name": "call_80270318"
+   },
+   {
+    "address": "0x80270338",
+    "name": "call_80270338"
+   },
+   {
+    "address": "0x8027033C",
+    "name": "call_8027033C"
+   },
+   {
+    "address": "0x8027035C",
+    "name": "call_8027035C"
+   },
+   {
+    "address": "0x802703C0",
+    "name": "call_802703C0"
+   },
+   {
+    "address": "0x802703E0",
+    "name": "call_802703E0"
+   },
+   {
+    "address": "0x80270434",
+    "name": "call_80270434"
+   },
+   {
+    "address": "0x80270454",
+    "name": "call_80270454"
+   },
+   {
+    "address": "0x80271E3C",
+    "name": "call_80271E3C"
+   },
+   {
+    "address": "0x80271E7C",
+    "name": "call_80271E7C"
+   },
+   {
+    "address": "0x80271F8C",
+    "name": "call_80271F8C"
+   },
+   {
+    "address": "0x80271FC8",
+    "name": "call_80271FC8"
+   },
+   {
+    "address": "0x80271FCC",
+    "name": "call_80271FCC"
+   },
+   {
+    "address": "0x80272008",
+    "name": "call_80272008"
+   },
+   {
+    "address": "0x80272038",
+    "name": "call_80272038"
+   },
+   {
+    "address": "0x80272078",
+    "name": "call_80272078"
+   },
+   {
+    "address": "0x802720B8",
+    "name": "call_802720B8"
+   },
+   {
+    "address": "0x802720F8",
+    "name": "call_802720F8"
+   },
+   {
+    "address": "0x80272134",
+    "name": "call_80272134"
+   },
+   {
+    "address": "0x80272174",
+    "name": "call_80272174"
+   },
+   {
+    "address": "0x802725D4",
+    "name": "call_802725D4"
+   },
+   {
+    "address": "0x80272614",
+    "name": "call_80272614"
+   },
+   {
+    "address": "0x8027262C",
+    "name": "call_8027262C"
+   },
+   {
+    "address": "0x8027266C",
+    "name": "call_8027266C"
+   },
+   {
+    "address": "0x80272678",
+    "name": "call_80272678"
+   },
+   {
+    "address": "0x802726B8",
+    "name": "call_802726B8"
+   },
+   {
+    "address": "0x802726C0",
+    "name": "call_802726C0"
+   },
+   {
+    "address": "0x80272700",
+    "name": "call_80272700"
+   },
+   {
+    "address": "0x80272748",
+    "name": "call_80272748"
+   },
+   {
+    "address": "0x80272784",
+    "name": "call_80272784"
+   },
+   {
+    "address": "0x80272788",
+    "name": "call_80272788"
+   },
+   {
+    "address": "0x802727B8",
+    "name": "call_802727B8"
+   },
+   {
+    "address": "0x802727C4",
+    "name": "call_802727C4"
+   },
+   {
+    "address": "0x802727F8",
+    "name": "call_802727F8"
+   },
+   {
+    "address": "0x80272894",
+    "name": "call_80272894"
+   },
+   {
+    "address": "0x802728B0",
+    "name": "call_802728B0"
+   },
+   {
+    "address": "0x802728D4",
+    "name": "call_802728D4"
+   },
+   {
+    "address": "0x802728F0",
+    "name": "call_802728F0"
+   },
+   {
+    "address": "0x802728F8",
+    "name": "call_802728F8"
+   },
+   {
+    "address": "0x80272938",
+    "name": "call_80272938"
+   },
+   {
+    "address": "0x802729CC",
+    "name": "call_802729CC"
+   },
+   {
+    "address": "0x80272A0C",
+    "name": "call_80272A0C"
+   },
+   {
+    "address": "0x80272A38",
+    "name": "call_80272A38"
+   },
+   {
+    "address": "0x80272A44",
+    "name": "call_80272A44"
+   },
+   {
+    "address": "0x80272A78",
+    "name": "call_80272A78"
+   },
+   {
+    "address": "0x80272A84",
+    "name": "call_80272A84"
+   },
+   {
+    "address": "0x80274E14",
+    "name": "call_80274E14"
+   },
+   {
+    "address": "0x80274E54",
+    "name": "call_80274E54"
+   }
+  ]
+ }
+}

@@ -1,0 +1,964 @@
+{
+ "functions": [
+  {
+   "address": "0x8008E9B4",
+   "name": "VectorNormalS",
+   "size": 20
+  },
+  {
+   "address": "0x8008E9C8",
+   "name": "VectorNormal",
+   "size": 48
+  },
+  {
+   "address": "0x8008E9F8",
+   "name": "VectorNormalSS",
+   "size": 240
+  },
+  {
+   "address": "0x8008EAE8",
+   "name": "ResetGraph",
+   "size": 372
+  },
+  {
+   "address": "0x8008EC5C",
+   "name": "SetGraphDebug",
+   "size": 92
+  },
+  {
+   "address": "0x8008ECB8",
+   "name": "SetDispMask",
+   "size": 152
+  },
+  {
+   "address": "0x8008ED50",
+   "name": "DrawSync",
+   "size": 388
+  },
+  {
+   "address": "0x8008EED4",
+   "name": "ClearImage",
+   "size": 144
+  },
+  {
+   "address": "0x8008EF64",
+   "name": "ClearImage2",
+   "size": 152
+  },
+  {
+   "address": "0x8008EFFC",
+   "name": "LoadImage",
+   "size": 96
+  },
+  {
+   "address": "0x8008F05C",
+   "name": "StoreImage",
+   "size": 96
+  },
+  {
+   "address": "0x8008F0BC",
+   "name": "MoveImage",
+   "size": 184
+  },
+  {
+   "address": "0x8008F174",
+   "name": "ClearOTagR",
+   "size": 172
+  },
+  {
+   "address": "0x8008F220",
+   "name": "DrawPrim",
+   "size": 92
+  },
+  {
+   "address": "0x8008F27C",
+   "name": "DrawOTag",
+   "size": 112
+  },
+  {
+   "address": "0x8008F2EC",
+   "name": "PutDrawEnv",
+   "size": 192
+  },
+  {
+   "address": "0x8008F3AC",
+   "name": "PutDispEnv",
+   "size": 1272
+  },
+  {
+   "address": "0x8008F8A4",
+   "name": "SetDrawArea",
+   "size": 128
+  },
+  {
+   "address": "0x8008F924",
+   "name": "SetDrawEnv",
+   "size": 6352
+  },
+  {
+   "address": "0x800911F4",
+   "name": "_GPU_ResetCallback",
+   "size": 80
+  },
+  {
+   "address": "0x80091244",
+   "name": "_card_info",
+   "size": 16
+  },
+  {
+   "address": "0x80091254",
+   "name": "sprintf",
+   "size": 2192
+  },
+  {
+   "address": "0x80091AE4",
+   "name": "close",
+   "size": 16
+  },
+  {
+   "address": "0x80091AF4",
+   "name": "InitCARD",
+   "size": 144
+  },
+  {
+   "address": "0x80091B84",
+   "name": "StartCARD",
+   "size": 72
+  },
+  {
+   "address": "0x80091BCC",
+   "name": "write",
+   "size": 16
+  },
+  {
+   "address": "0x80091BDC",
+   "name": "_bu_init",
+   "size": 16
+  },
+  {
+   "address": "0x80091BEC",
+   "name": "EnableEvent",
+   "size": 16
+  },
+  {
+   "address": "0x80091BFC",
+   "name": "nextfile",
+   "size": 16
+  },
+  {
+   "address": "0x80091C0C",
+   "name": "_card_clear",
+   "size": 64
+  },
+  {
+   "address": "0x80091C4C",
+   "name": "OpenEvent",
+   "size": 16
+  },
+  {
+   "address": "0x80091C5C",
+   "name": "ExitCriticalSection",
+   "size": 16
+  },
+  {
+   "address": "0x80091C6C",
+   "name": "read",
+   "size": 16
+  },
+  {
+   "address": "0x80091C7C",
+   "name": "TestEvent",
+   "size": 16
+  },
+  {
+   "address": "0x80091C8C",
+   "name": "strcpy",
+   "size": 16
+  },
+  {
+   "address": "0x80091C9C",
+   "name": "open",
+   "size": 16
+  },
+  {
+   "address": "0x80091CAC",
+   "name": "firstfile",
+   "size": 672
+  },
+  {
+   "address": "0x8009207C",
+   "name": "_card_format",
+   "size": 656
+  },
+  {
+   "address": "0x8009230C",
+   "name": "VSync",
+   "size": 528
+  },
+  {
+   "address": "0x8009251C",
+   "name": "_card_load",
+   "size": 16
+  },
+  {
+   "address": "0x8009252C",
+   "name": "EnterCriticalSection",
+   "size": 16
+  },
+  {
+   "address": "0x8009253C",
+   "name": "strlen",
+   "size": 16
+  },
+  {
+   "address": "0x8009254C",
+   "name": "strcmp",
+   "size": 16
+  },
+  {
+   "address": "0x8009255C",
+   "name": "SquareRoot12",
+   "size": 160
+  },
+  {
+   "address": "0x800925FC",
+   "name": "memset",
+   "size": 16
+  },
+  {
+   "address": "0x8009260C",
+   "name": "SetSp",
+   "size": 16
+  },
+  {
+   "address": "0x8009261C",
+   "name": "printf",
+   "size": 16
+  },
+  {
+   "address": "0x8009262C",
+   "name": "MulMatrix",
+   "size": 272
+  },
+  {
+   "address": "0x8009273C",
+   "name": "StCdInterrupt",
+   "size": 2800
+  },
+  {
+   "address": "0x8009322C",
+   "name": "DecDCTReset",
+   "size": 52
+  },
+  {
+   "address": "0x80093260",
+   "name": "DecDCTin",
+   "size": 124
+  },
+  {
+   "address": "0x800932FC",
+   "name": "DecDCToutCallback",
+   "size": 1012
+  },
+  {
+   "address": "0x800936F0",
+   "name": "StUnSetRing",
+   "size": 128
+  },
+  {
+   "address": "0x80093770",
+   "name": "CdRead2",
+   "size": 176
+  },
+  {
+   "address": "0x80093820",
+   "name": "StSetStream",
+   "size": 144
+  },
+  {
+   "address": "0x800938B0",
+   "name": "CdSearchFile",
+   "size": 2416
+  },
+  {
+   "address": "0x80094220",
+   "name": "StSetRing",
+   "size": 48
+  },
+  {
+   "address": "0x80094250",
+   "name": "StGetNext",
+   "size": 192
+  },
+  {
+   "address": "0x80094310",
+   "name": "CdControl",
+   "size": 316
+  },
+  {
+   "address": "0x8009444C",
+   "name": "CdControlF",
+   "size": 308
+  },
+  {
+   "address": "0x80094580",
+   "name": "CdControlB",
+   "size": 336
+  },
+  {
+   "address": "0x80094750",
+   "name": "CdIntToPos",
+   "size": 272
+  },
+  {
+   "address": "0x80094880",
+   "name": "StFreeRing",
+   "size": 176
+  },
+  {
+   "address": "0x80094930",
+   "name": "SetDefDispEnv",
+   "size": 64
+  },
+  {
+   "address": "0x80094A88",
+   "name": "PadEnableCom",
+   "size": 288
+  },
+  {
+   "address": "0x80094BA8",
+   "name": "ratan2",
+   "size": 384
+  },
+  {
+   "address": "0x80094D28",
+   "name": "memmove",
+   "size": 112
+  },
+  {
+   "address": "0x80094D98",
+   "name": "catan",
+   "size": 208
+  },
+  {
+   "address": "0x80094E68",
+   "name": "CdSync",
+   "size": 32
+  },
+  {
+   "address": "0x80094E98",
+   "name": "TransMatrix",
+   "size": 48
+  },
+  {
+   "address": "0x80094EC8",
+   "name": "SetDefDrawEnv",
+   "size": 192
+  },
+  {
+   "address": "0x80094F88",
+   "name": "SpuSetTransferStartAddr",
+   "size": 96
+  },
+  {
+   "address": "0x80094FE8",
+   "name": "SpuSetReverbModeParam",
+   "size": 1248
+  },
+  {
+   "address": "0x800954C8",
+   "name": "SpuWrite",
+   "size": 96
+  },
+  {
+   "address": "0x80095528",
+   "name": "SpuNSetVoiceAttr",
+   "size": 1488
+  },
+  {
+   "address": "0x80095AF8",
+   "name": "SpuGetVoicePitch",
+   "size": 32
+  },
+  {
+   "address": "0x80095B18",
+   "name": "SpuSetCommonAttr",
+   "size": 896
+  },
+  {
+   "address": "0x80095E98",
+   "name": "SpuGetVoiceEnvelope",
+   "size": 32
+  },
+  {
+   "address": "0x80095EB8",
+   "name": "SpuSetKey",
+   "size": 448
+  },
+  {
+   "address": "0x80096078",
+   "name": "SpuSetReverbVoice",
+   "size": 48
+  },
+  {
+   "address": "0x80096178",
+   "name": "SpuInit",
+   "size": 32
+  },
+  {
+   "address": "0x80096198",
+   "name": "SpuIsTransferCompleted",
+   "size": 176
+  },
+  {
+   "address": "0x80096248",
+   "name": "SsPitchFromNote",
+   "size": 300
+  },
+  {
+   "address": "0x800968D4",
+   "name": "CdRead",
+   "size": 412
+  },
+  {
+   "address": "0x80096A70",
+   "name": "CdReadSync",
+   "size": 260
+  },
+  {
+   "address": "0x80096B74",
+   "name": "CdInit",
+   "size": 336
+  },
+  {
+   "address": "0x80096CE4",
+   "name": "PadGetState",
+   "size": 208
+  },
+  {
+   "address": "0x80096DB4",
+   "name": "PadInitMtap",
+   "size": 352
+  },
+  {
+   "address": "0x80096F14",
+   "name": "PadStartCom",
+   "size": 204
+  },
+  {
+   "address": "0x80096FE0",
+   "name": "PadStopCom",
+   "size": 68
+  },
+  {
+   "address": "0x80097024",
+   "name": "PadSetActAlign",
+   "size": 368
+  },
+  {
+   "address": "0x80097194",
+   "name": "PadSetMainMode",
+   "size": 352
+  },
+  {
+   "address": "0x800972F4",
+   "name": "PadSetAct",
+   "size": 64
+  },
+  {
+   "address": "0x80097334",
+   "name": "ResetCallback",
+   "size": 48
+  },
+  {
+   "address": "0x80097364",
+   "name": "InterruptCallback",
+   "size": 48
+  },
+  {
+   "address": "0x80097394",
+   "name": "DMACallback",
+   "size": 48
+  },
+  {
+   "address": "0x800973C4",
+   "name": "VSyncCallback",
+   "size": 52
+  },
+  {
+   "address": "0x800973F8",
+   "name": "CheckCallback",
+   "size": 16
+  },
+  {
+   "address": "0x80097408",
+   "name": "SetIntrMask",
+   "size": 1348
+  },
+  {
+   "address": "0x80097954",
+   "name": "InitGeom",
+   "size": 136
+  },
+  {
+   "address": "0x80097A0C",
+   "name": "SetGeomScreen",
+   "size": 16
+  },
+  {
+   "address": "0x80097A1C",
+   "name": "SetGeomOffset",
+   "size": 32
+  },
+  {
+   "address": "0x80097A3C",
+   "name": "GPU_cw",
+   "size": 16
+  },
+  {
+   "address": "0x80097A4C",
+   "name": "memcpy",
+   "size": 16
+  },
+  {
+   "address": "0x800979F0",
+   "name": "GetVideoMode",
+   "size": 28
+  },
+  {
+   "address": "0x80097A5C",
+   "name": "memchr",
+   "size": 16
+  },
+  {
+   "address": "0x80097A6C",
+   "name": "ChangeClearPAD",
+   "size": 16
+  },
+  {
+   "address": "0x80097A7C",
+   "name": "ReadInitPadFlag",
+   "size": 16
+  },
+  {
+   "address": "0x80097A8C",
+   "name": "InitCARD2",
+   "size": 16
+  },
+  {
+   "address": "0x80097A9C",
+   "name": "_patch_card_info",
+   "size": 220
+  },
+  {
+   "address": "0x80097B78",
+   "name": "_patch_card",
+   "size": 148
+  },
+  {
+   "address": "0x80097C0C",
+   "name": "_patch_card2",
+   "size": 112
+  },
+  {
+   "address": "0x80097C7C",
+   "name": "_copy_memcard_patch",
+   "size": 64
+  },
+  {
+   "address": "0x80097CBC",
+   "name": "StartCARD2",
+   "size": 16
+  },
+  {
+   "address": "0x80097CCC",
+   "name": "_new_card",
+   "size": 16
+  },
+  {
+   "address": "0x80097CDC",
+   "name": "_card_write",
+   "size": 16
+  },
+  {
+   "address": "0x80097CEC",
+   "name": "firstfile2",
+   "size": 16
+  },
+  {
+   "address": "0x80097CFC",
+   "name": "_card_status",
+   "size": 16
+  },
+  {
+   "address": "0x80097D0C",
+   "name": "bzero",
+   "size": 16
+  },
+  {
+   "address": "0x80097D1C",
+   "name": "_card_read",
+   "size": 16
+  },
+  {
+   "address": "0x80097D2C",
+   "name": "startIntrVSync",
+   "size": 288
+  },
+  {
+   "address": "0x80097E54",
+   "name": "puts",
+   "size": 24
+  },
+  {
+   "address": "0x80097E6C",
+   "name": "ChangeClearRCnt",
+   "size": 16
+  },
+  {
+   "address": "0x80097E7C",
+   "name": "CdReady",
+   "size": 32
+  },
+  {
+   "address": "0x80098400",
+   "name": "CD_sync",
+   "size": 640
+  },
+  {
+   "address": "0x80098680",
+   "name": "CD_ready",
+   "size": 712
+  },
+  {
+   "address": "0x80098948",
+   "name": "CD_cw",
+   "size": 1036
+  },
+  {
+   "address": "0x80098D54",
+   "name": "CD_vol",
+   "size": 136
+  },
+  {
+   "address": "0x80098DDC",
+   "name": "CD_flush",
+   "size": 212
+  },
+  {
+   "address": "0x80098EB0",
+   "name": "CD_initvol",
+   "size": 240
+  },
+  {
+   "address": "0x80098FA0",
+   "name": "CD_init",
+   "size": 480
+  },
+  {
+   "address": "0x80099180",
+   "name": "CD_datasync",
+   "size": 360
+  },
+  {
+   "address": "0x800993D0",
+   "name": "init_ring_status",
+   "size": 64
+  },
+  {
+   "address": "0x80099410",
+   "name": "data_ready_callback",
+   "size": 140
+  },
+  {
+   "address": "0x8009949C",
+   "name": "DsDataCallback",
+   "size": 48
+  },
+  {
+   "address": "0x800994CC",
+   "name": "DsReadyCallback",
+   "size": 32
+  },
+  {
+   "address": "0x800994EC",
+   "name": "CdDataCallback",
+   "size": 48
+  },
+  {
+   "address": "0x8009951C",
+   "name": "CdReadyCallback",
+   "size": 32
+  },
+  {
+   "address": "0x8009953C",
+   "name": "StSetMask",
+   "size": 32
+  },
+  {
+   "address": "0x8009955C",
+   "name": "strncmp",
+   "size": 16
+  },
+  {
+   "address": "0x8009956C",
+   "name": "StClearRing",
+   "size": 96
+  },
+  {
+   "address": "0x800995CC",
+   "name": "InitHeap",
+   "size": 16
+  },
+  {
+   "address": "0x800995DC",
+   "name": "_padIsVsync",
+   "size": 104
+  },
+  {
+   "address": "0x80099644",
+   "name": "_padIntPad",
+   "size": 400
+  },
+  {
+   "address": "0x800997D4",
+   "name": "_padInitSioMode",
+   "size": 1060
+  },
+  {
+   "address": "0x80099BF8",
+   "name": "_padSioRW",
+   "size": 548
+  },
+  {
+   "address": "0x80099E1C",
+   "name": "_padSioRW2",
+   "size": 636
+  },
+  {
+   "address": "0x8009A098",
+   "name": "_padClrIntSio0",
+   "size": 144
+  },
+  {
+   "address": "0x8009A128",
+   "name": "_padWaitRXready",
+   "size": 40
+  },
+  {
+   "address": "0x8009A150",
+   "name": "_padSetCmd",
+   "size": 16
+  },
+  {
+   "address": "0x8009A160",
+   "name": "_padSendAtLoadInfo",
+   "size": 132
+  },
+  {
+   "address": "0x8009A1E4",
+   "name": "_padRecvAtLoadInfo",
+   "size": 624
+  },
+  {
+   "address": "0x8009A454",
+   "name": "_padGetActSize",
+   "size": 56
+  },
+  {
+   "address": "0x8009A48C",
+   "name": "_padLoadActInfo",
+   "size": 1396
+  },
+  {
+   "address": "0x8009AA00",
+   "name": "_padCmdParaMode",
+   "size": 168
+  },
+  {
+   "address": "0x8009AAA8",
+   "name": "_padSetRC2wait",
+   "size": 32
+  },
+  {
+   "address": "0x8009AAC8",
+   "name": "_padChkRC2wait",
+   "size": 2436
+  },
+  {
+   "address": "0x8009B44C",
+   "name": "_spu_init",
+   "size": 1088
+  },
+  {
+   "address": "0x8009B88C",
+   "name": "_spu_FiDMA",
+   "size": 188
+  },
+  {
+   "address": "0x8009B948",
+   "name": "_spu_t",
+   "size": 640
+  },
+  {
+   "address": "0x8009BBC8",
+   "name": "_spu_Fw",
+   "size": 132
+  },
+  {
+   "address": "0x8009BC4C",
+   "name": "_spu_FsetRXX",
+   "size": 68
+  },
+  {
+   "address": "0x8009BC90",
+   "name": "_spu_FsetRXXa",
+   "size": 164
+  },
+  {
+   "address": "0x8009BD34",
+   "name": "_spu_FsetPCR",
+   "size": 168
+  },
+  {
+   "address": "0x8009BDDC",
+   "name": "_spu_Fw1ts",
+   "size": 104
+  },
+  {
+   "address": "0x8009BE44",
+   "name": "_SpuIsInAllocateArea_",
+   "size": 144
+  },
+  {
+   "address": "0x8009BED4",
+   "name": "_SpuInit",
+   "size": 232
+  },
+  {
+   "address": "0x8009BFBC",
+   "name": "SpuStart",
+   "size": 120
+  },
+  {
+   "address": "0x8009C034",
+   "name": "_spu_setReverbAttr",
+   "size": 1232
+  },
+  {
+   "address": "0x8009C504",
+   "name": "SpuClearReverbWorkArea",
+   "size": 416
+  },
+  {
+   "address": "0x8009C6A4",
+   "name": "_spu_note2pitch",
+   "size": 208
+  },
+  {
+   "address": "0x8009C774",
+   "name": "_SpuSetAnyVoice",
+   "size": 704
+  },
+  {
+   "address": "0x8009CA34",
+   "name": "_SpuDataCallback",
+   "size": 48
+  },
+  {
+   "address": "0x8009CA64",
+   "name": "CdSyncCallback",
+   "size": 32
+  },
+  {
+   "address": "0x8009CAE4",
+   "name": "CdStatus",
+   "size": 16
+  },
+  {
+   "address": "0x8009CB04",
+   "name": "CdFlush",
+   "size": 32
+  },
+  {
+   "address": "0x8009CB34",
+   "name": "DeliverEvent",
+   "size": 16
+  },
+  {
+   "address": "0x8009CB44",
+   "name": "_padInitMtapPort",
+   "size": 3388
+  },
+  {
+   "address": "0x8009D880",
+   "name": "_mtapFailAuto",
+   "size": 1028
+  },
+  {
+   "address": "0x8009DC84",
+   "name": "SysDeqIntRP",
+   "size": 16
+  },
+  {
+   "address": "0x8009DC94",
+   "name": "SysEnqIntRP",
+   "size": 16
+  },
+  {
+   "address": "0x8009DCA4",
+   "name": "setjmp",
+   "size": 16
+  },
+  {
+   "address": "0x8009DCB4",
+   "name": "HookEntryInt",
+   "size": 16
+  },
+  {
+   "address": "0x8009DCC4",
+   "name": "startIntrDMA",
+   "size": 672
+  },
+  {
+   "address": "0x8009DF6C",
+   "name": "_96_remove",
+   "size": 24
+  },
+  {
+   "address": "0x8009DF84",
+   "name": "ReturnFromException",
+   "size": 16
+  },
+  {
+   "address": "0x8009DF94",
+   "name": "ResetEntryInt",
+   "size": 16
+  },
+  {
+   "address": "0x8009DFA4",
+   "name": "_patch_gte",
+   "size": 224
+  },
+  {
+   "address": "0x8009E084",
+   "name": "FlushCache",
+   "size": 16
+  },
+  {
+   "address": "0x8009E094",
+   "name": "WaitEvent",
+   "size": 16
+  },
+  {
+   "address": "0x8009E0A4",
+   "name": "CD_getsector2",
+   "size": 240
+  },
+  {
+   "address": "0x8009E194",
+   "name": "CD_getsector",
+   "size": 256
+  }
+ ]
+}

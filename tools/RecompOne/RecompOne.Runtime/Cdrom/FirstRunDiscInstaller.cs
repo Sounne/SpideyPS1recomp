@@ -17,7 +17,7 @@ public sealed record DiscInstallProfile(
     string BundledAssetResource,
     bool DreamcastMovies = false);
 
-/// <summary>Identifies the game's USA boot ID, independently of dump names or revision hashes.</summary>
+/// <summary>Identifies the game's boot ID (per profile), independently of dump names or revision hashes.</summary>
 public static class DiscRevisionValidator
 {
     public static string? Validate(string path, DiscInstallProfile profile)
@@ -30,7 +30,7 @@ public static class DiscRevisionValidator
             string config = Encoding.ASCII.GetString(fs.ReadFile("SYSTEM.CNF"));
             var boot = Regex.Match(config, @"(?im)^\s*BOOT\s*=\s*cdrom:\s*[\\/]?([^;\s]+)(?:;\d+)?\s*$");
             if (!boot.Success || !boot.Groups[1].Value.Equals(profile.BootFile, StringComparison.OrdinalIgnoreCase))
-                return Required(profile, "SYSTEM.CNF does not identify this game's USA release");
+                return Required(profile, "SYSTEM.CNF does not identify the expected release of this game");
             if (!fs.Locate(profile.BootFile, out _, out uint size) || size == 0)
                 return Required(profile, $"{profile.BootFile} is missing or empty");
             return null;

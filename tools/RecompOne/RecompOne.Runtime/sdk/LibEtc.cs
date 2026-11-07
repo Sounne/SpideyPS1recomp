@@ -11,7 +11,7 @@ public static class LibEtc
     /// <summary>Rate instrumentation -- VSync(0) waits vs VSync(-1) polls.</summary>
     public static long WaitCalls, PollCalls;
 
-    const double FrameSeconds = 1.0 / 60.0;
+    static double FrameSeconds => 1.0 / Host.FrameClock.VBlankHz;
     static readonly VSyncEvent _vsyncEvent = new();
     static readonly VSyncInputEvent _inputEvent = new();
     static readonly System.Diagnostics.Stopwatch _sinceFrame = System.Diagnostics.Stopwatch.StartNew();

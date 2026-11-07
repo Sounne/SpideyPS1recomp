@@ -1,0 +1,71 @@
+"""Bounded SM2 mod selector; all other retail paths retain a native power-profile index."""
+from pathlib import Path
+import re
+
+SOURCE = Path(__file__).resolve().parents[1] / 'generated/shell.cs'
+
+
+def exact(text, old, new, count=1):
+    if text.count(old) != count:
+        raise RuntimeError(f'Expected {count} occurrences of {old!r}, got {text.count(old)}')
+    return text.replace(old, new)
+
+
+def main():
+    source = SOURCE.read_text(encoding='utf-8')
+    start = source.index('public static void func_802492C4(')
+    end = source.index('public static void func_80249F48(', start)
+    f = source[start:end]
+    f = exact(f, "c.A0 = 0x00000528u;", "c.A0 = Recompiled.Costume.ViewerListBytes;")
+    # charbio pointers must be ready before copying the original nineteen records.
+    entry = 'c.RA = 0x802492F8u;\n        SpiderMan2.func_8023D074(c, m);'
+    f = exact(f, entry, entry + '\n        Recompiled.Costume.PrepareViewer(c, m);')
+    f = exact(f, '< 0x00000013u ? 1u : 0u;', '< Recompiled.Costume.ViewerCount ? 1u : 0u;', 2)
+    old = 'c.SetDerived(3, c.V1 & c.V0, 3, 2);'
+    if f.count(old) != 2:
+        raise RuntimeError('Unlock-test shape changed')
+    for reg in ['S0', 'S2']:
+        f = f.replace(old, f'c.V1 = Recompiled.Costume.IsUnlocked(m, c.{reg}) ? 1u : 0u;', 1)
+    for offset, expected in [('16F4', 4), ('16FC', 1)]:
+        pattern = rf'c\.SetDerived\((\d+), c\.[A-Z0-9]+ \+ 0x{offset}u, \d+\);'
+        delta = ' + 8u' if offset == '16FC' else ''
+        f, count = re.subn(pattern, lambda m: f'c.SetDerived({m[1]}, Recompiled.Costume.ViewerTable{delta}, 0);', f)
+        if count != expected:
+            raise RuntimeError(f'Table {offset}: {count}, expected {expected}')
+    pattern = r'RecompOne\.Runtime\.Hardware\.GteScreen\.LoadU8\(c, (\d+), m, \(c\.[A-Z0-9]+ \+ 0x72u\), false\);'
+    reads = list(re.finditer(pattern, f))
+    if len(reads) != 6:
+        raise RuntimeError(f'Expected six selected-byte reads, got {len(reads)}')
+    # A1 goes to the texture-library loader; A0 at exit chooses native powers.
+    # Both must retain the bounded stock proxy, never the host catalogue index.
+    f = re.sub(pattern, lambda m: m[0] if m[1] in ['4', '5'] else
+               f'c.{dict([(2,"V0"),(3,"V1")])[int(m[1])]} = Recompiled.Costume.ReadSelected(m);', f)
+    f = exact(f, 'm.WriteU8((c.A3 + 0x72u), (byte)c.S2);',
+              'Recompiled.Costume.WriteSelected(m, (int)c.S2);')
+    f = exact(f, 'm.WriteU8((c.S5 + 0x15u), (byte)c.V1);',
+              'm.WriteU8((c.S5 + 0x15u), (byte)c.V1);\n        Recompiled.Costume.ConfigureViewerList(m, c.S5);')
+    f = exact(f, 'SpiderMan2.func_80017F24(c, m);',
+              'SpiderMan2.func_80017F24(c, m);\n        Recompiled.Costume.AlignViewerFrame(m, c.S5);')
+    SOURCE.write_text(source[:start] + f + source[end:], encoding='utf-8')
+    print('  SM2 costume viewer: nineteen stock + up to forty-one mods')
+
+
+def patch_list_helpers():
+    path = Path(__file__).resolve().parents[1] / "generated/main.cs"
+    source = path.read_text(encoding="utf-8")
+    for address in ['800180A0', '800182A4']:
+        start = source.index("public static void func_" + address + "(")
+        end = source.index("public static void ", start + 20)
+        f = source[start:end]
+        # Capture before the color helper advances A0 through the row array.
+        brace = f.index("{") + 1
+        f = f[:brace] + "\n        int listRows = System.Math.Max(40, System.Math.Min(Recompiled.SuitMods.MaxCount, (int)m.ReadU8(c.A0 + 0x14)));" + f[brace:]
+        if f.count("< 40 ?") != 1:
+            raise RuntimeError("list helper shape changed: " + address)
+        f = f.replace("< 40 ?", "< listRows ?")
+        source = source[:start] + f + source[end:]
+    path.write_text(source, encoding="utf-8")
+
+if __name__ == '__main__':
+    main()
+    patch_list_helpers()
